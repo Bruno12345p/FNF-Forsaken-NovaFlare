@@ -1,10 +1,10 @@
-package substates;
+﻿package substates;
 
-import backend.WeekData;
-import backend.Highscore;
+import game.funkin.backend.WeekData;
+import game.funkin.backend.Highscore;
 import flixel.addons.transition.FlxTransitionableState;
 import flixel.FlxSubState;
-import objects.HealthIcon;
+import game.funkin.objects.HealthIcon;
 
 class ResetScoreSubState extends MusicBeatSubstate
 {
@@ -159,3 +159,4 @@ class ResetScoreSubState extends MusicBeatSubstate
 		super.destroy();
 	}
 }
+

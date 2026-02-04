@@ -1,6 +1,6 @@
-package options.base;
+﻿package options.base;
 
-import backend.extraKeys.ExtraKeysHandler;
+import game.funkin.backend.ExtraKeysHandler;
 import backend.InputFormatter;
 import flixel.addons.display.FlxBackdrop;
 import flixel.addons.display.FlxGridOverlay;
@@ -11,7 +11,7 @@ import flixel.input.gamepad.FlxGamepad;
 import flixel.input.gamepad.FlxGamepadInputID;
 import flixel.input.gamepad.FlxGamepadManager;
 import flixel.util.FlxSpriteUtil;
-import objects.state.optionState.controlsSubState.*;
+import options.objects.controlsSubState.*;
 
 class NewControlsSubState extends MusicBeatSubstate
 {

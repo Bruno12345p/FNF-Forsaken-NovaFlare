@@ -1,8 +1,8 @@
-package states;
+﻿package states;
 
-import backend.WeekData;
-import backend.Highscore;
-import backend.Song;
+import game.funkin.backend.WeekData;
+import game.funkin.backend.Highscore;
+import game.funkin.backend.Song;
 import flixel.group.FlxGroup;
 import flixel.graphics.FlxGraphic;
 import flixel.addons.transition.FlxTransitionableState;
@@ -352,10 +352,7 @@ class StoryMenuState extends MusicBeatState
 					FlxTransitionableState.skipNextTransOut = true;
 				}
 				LoadingState.loadAndSwitchState(new PlayState(), true);
-				if (!ClientPrefs.data.freeplayOld)
-					FreeplayState.destroyFreeplayVocals();
-				else
-					FreeplayStatePsych.destroyFreeplayVocals();
+				FreeplayState.destroyFreeplayVocals();
 			});
 
 			#if (MODS_ALLOWED && DISCORD_ALLOWED)
@@ -507,3 +504,4 @@ class StoryMenuState extends MusicBeatState
 		#end
 	}
 }
+

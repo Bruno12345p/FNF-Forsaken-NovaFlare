@@ -1,6 +1,6 @@
-package backend;
+﻿package backend;
 
-import backend.extraKeys.ExtraKeysHandler.EKNoteColor;
+import game.funkin.backend.ExtraKeysHandler.EKNoteColor;
 import flixel.util.FlxSave;
 import openfl.utils.Assets;
 import flixel.FlxBasic;
@@ -511,4 +511,5 @@ class ArrowRGBSavedData {
 		this.colors = colors;
 	}
 }
+
 

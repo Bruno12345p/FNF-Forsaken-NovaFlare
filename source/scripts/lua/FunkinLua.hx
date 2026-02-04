@@ -1,9 +1,9 @@
-#if LUA_ALLOWED
+﻿#if LUA_ALLOWED
 package scripts.lua;
 
-import backend.WeekData;
-import backend.Highscore;
-import backend.Song;
+import game.funkin.backend.WeekData;
+import game.funkin.backend.Highscore;
+import game.funkin.backend.Song;
 import openfl.Lib;
 import openfl.utils.Assets;
 import flixel.FlxBasic;
@@ -12,15 +12,14 @@ import flixel.addons.transition.FlxTransitionableState;
 #if (!flash && sys)
 import flixel.addons.display.FlxRuntimeShader;
 #end
-import cutscenes.DialogueBoxPsych;
-import objects.StrumNote;
-import objects.Note;
-import objects.NoteSplash;
-import objects.Character;
+import game.funkin.cutscenes.DialogueBoxPsych;
+import game.funkin.objects.StrumNote;
+import game.funkin.objects.Note;
+import game.funkin.objects.NoteSplash;
+import game.funkin.objects.Character;
 import states.MainMenuState;
 import states.StoryMenuState;
-import states.FreeplayState;
-import states.FreeplayStatePsych;
+import states.freeplayState.FreeplayState;
 import substates.PauseSubState;
 import substates.GameOverSubstate;
 import scripts.lua.LuaUtils;
@@ -959,10 +958,8 @@ class FunkinLua
 
 			if (PlayState.isStoryMode)
 				MusicBeatState.switchState(new StoryMenuState());
-			else if (!ClientPrefs.data.freeplayOld)
-				MusicBeatState.switchState(new FreeplayState());
 			else
-				MusicBeatState.switchState(new FreeplayStatePsych());
+				MusicBeatState.switchState(new FreeplayState());
 			#if DISCORD_ALLOWED DiscordClient.resetClientID(); #end
 
 			FlxG.sound.playMusic(Paths.music('freakyMenu'));
@@ -2110,3 +2107,4 @@ class FunkinLua
 	}
 }
 #end
+

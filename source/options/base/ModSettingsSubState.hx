@@ -1,8 +1,8 @@
-package options.base;
+﻿package options.base;
 
 import flixel.input.keyboard.FlxKey;
 import flixel.input.gamepad.FlxGamepadInputID;
-import objects.Character;
+import game.funkin.objects.Character;
 
 class ModSettingsSubState extends BaseOptionsMenu
 {
@@ -177,3 +177,4 @@ class ModSettingsSubState extends BaseOptionsMenu
 		super.close();
 	}
 }
+

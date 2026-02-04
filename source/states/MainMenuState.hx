@@ -1,6 +1,6 @@
-package states;
+﻿package states;
 
-import backend.WeekData;
+import game.funkin.backend.WeekData;
 import backend.Achievements;
 import flixel.FlxObject;
 import flixel.addons.transition.FlxTransitionableState;
@@ -8,7 +8,7 @@ import flixel.effects.FlxFlicker;
 import flixel.addons.display.FlxBackdrop;
 import flixel.input.keyboard.FlxKey;
 import objects.AchievementPopup;
-import states.editors.MasterEditorMenu;
+import editors.MasterEditorMenu;
 import options.OptionsState;
 import openfl.Lib;
 import haxe.Json;
@@ -575,10 +575,7 @@ class MainMenuState extends MusicBeatState
 					case 'story_mode':
 						MusicBeatState.switchState(new StoryMenuState());
 					case 'freeplay':
-						if (!ClientPrefs.data.freeplayOld)
 							MusicBeatState.switchState(new FreeplayState());
-						else
-							MusicBeatState.switchState(new FreeplayStatePsych());
 					#if MODS_ALLOWED
 					case 'mods':
 						MusicBeatState.switchState(new ModsMenuState());
@@ -665,3 +662,4 @@ class MainMenuState extends MusicBeatState
 		}
 	}
 }
+

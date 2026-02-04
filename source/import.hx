@@ -1,4 +1,4 @@
-#if !macro
+﻿#if !macro
 // Discord API
 #if DISCORD_ALLOWED
 import backend.Discord;
@@ -10,7 +10,7 @@ import backend.Achievements;
 #end
 
 #if hxvlc
-import backend.VideoSprite;
+import objects.VideoSprite;
 #end
 
 // Android
@@ -38,7 +38,7 @@ import sys.io.*;
 import js.html.*;
 #end
 
-import language.Language;
+import backend.language.Language;
 
 import backend.Paths;
 import backend.Cache;
@@ -49,14 +49,14 @@ import backend.MusicBeatSubstate;
 import backend.CustomFadeTransition;
 import backend.ClientPrefs;
 import backend.Conductor;
-import backend.BaseStage;
-import backend.Difficulty;
+import game.funkin.stages.base.BaseStage;
+import game.funkin.backend.Difficulty;
 import backend.Mods;
 import backend.ui.*; // Psych-UI
 import backend.data.*;
 import backend.mouse.*;
 import backend.gc.*;
-import backend.extraKeys.ExtraKeysHandler;
+import game.funkin.backend.ExtraKeysHandler;
 
 import objects.Alphabet;
 import objects.BGSprite;
@@ -68,8 +68,8 @@ import developer.display.*;
 import shapeEx.*;
 import objects.state.general.*;
 
-import states.PlayState;
-import states.LoadingState;
+import game.funkin.PlayState;
+import states.loadingState.LoadingState;
 
 #if flxanimate
 import flxanimate.*;
@@ -106,3 +106,4 @@ import shaders.flixel.system.FlxShader;
 
 using StringTools;
 #end
+

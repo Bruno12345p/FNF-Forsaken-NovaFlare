@@ -26,17 +26,14 @@ class InterfaceGroup extends OptionCata
 		var option:Option = new Option(this, 'audioDisplayUpdate', INT, [0, 200, 'MS']);
 		addOption(option);
 
-		var option:Option = new Option(this, 'freeplayOld', BOOL);
-		addOption(option);
-
 		var option:Option = new Option(this, 'skipTitleVideo', BOOL);
-		addOption(option, true);
+		addOption(option);
 
 		var option:Option = new Option(this, 'resultsScreen', BOOL);
-		addOption(option);
+		addOption(option, true);
 
 		var option:Option = new Option(this, 'loadingScreen', BOOL);
-		addOption(option, true);
+		addOption(option);
 
 		var maxthread:Int = Std.int(Math.max(1, CoolUtil.getCPUThreadsCount() - #if DISCORD_ALLOWED 2 #else 1 #end));
 		var option:Option = new Option(this, 'loadThreads', INT, [1, maxthread, ' Thread']);

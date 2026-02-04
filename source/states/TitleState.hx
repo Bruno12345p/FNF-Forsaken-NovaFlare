@@ -1,8 +1,8 @@
-package states;
+﻿package states;
 
-import backend.extraKeys.ExtraKeysHandler;
-import backend.WeekData;
-import backend.Highscore;
+import game.funkin.backend.ExtraKeysHandler;
+import game.funkin.backend.WeekData;
+import game.funkin.backend.Highscore;
 
 import flixel.input.keyboard.FlxKey;
 import flixel.addons.transition.FlxTransitionableState;
@@ -21,6 +21,7 @@ import shaders.ColorSwap;
 import states.StoryMenuState;
 import states.OutdatedState;
 import states.MainMenuState;
+import states.backend.FlashingState;
 
 typedef TitleData =
 {
@@ -87,7 +88,7 @@ class TitleState extends MusicBeatState
 		ClientPrefs.loadPrefs();
 
 		if (ExtraKeysHandler.instance.data.scales == null)
-			MusicBeatState.switchState(new ScaleSimulationState());
+			MusicBeatState.switchState(new states.backend.ScaleSimulationState());
 
 		Highscore.load();
 
@@ -645,3 +646,4 @@ class TitleState extends MusicBeatState
 		}
 	}
 }
+

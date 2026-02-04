@@ -1,3 +1,5 @@
+﻿package scripts.scriptClasses;
+
 #if !macro
 import crowplexus.hscript.scriptclass.IScriptedClass;
 

@@ -1,6 +1,6 @@
-package backend;
+﻿package backend;
 
-import backend.extraKeys.ExtraKeysHandler.EKNoteColor;
+import game.funkin.backend.ExtraKeysHandler.EKNoteColor;
 import flixel.util.FlxSave;
 import flixel.input.keyboard.FlxKey;
 import flixel.input.gamepad.FlxGamepadInputID;
@@ -135,7 +135,6 @@ import states.TitleState;
 	public var skipTitleVideo:Bool = false;
 	public var audioDisplayQuality:Int = 1;
 	public var audioDisplayUpdate:Int = 50;
-	public var freeplayOld:Bool = false;
 	public var resultsScreen:Bool = true;
 	public var loadingScreen:Bool = false;
 	public var loadThreads:Int = #if mobile 2 #else 4 #end;
@@ -693,3 +692,4 @@ class ClientPrefs
 		}
 	}
 }
+

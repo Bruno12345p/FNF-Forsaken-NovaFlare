@@ -3,7 +3,7 @@ package substates;
 import flixel.addons.transition.FlxTransitionableState;
 import flixel.FlxSubState;
 import flixel.text.FlxText;
-import states.FreeplayState;
+import states.freeplayState.FreeplayState;
 import states.MainMenuState;
 
 using StringTools;

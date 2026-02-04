@@ -1,6 +1,6 @@
-package options.base;
+﻿package options.base;
 
-import backend.extraKeys.ExtraKeysHandler;
+import game.funkin.backend.ExtraKeysHandler;
 import backend.InputFormatter;
 import flixel.addons.display.FlxBackdrop;
 import flixel.addons.display.FlxGridOverlay;
@@ -629,3 +629,4 @@ class ControlsSubState extends MusicBeatSubstate
 		selectSpr.visible = (selectSpr.sprTracker != null);
 	}
 }
+

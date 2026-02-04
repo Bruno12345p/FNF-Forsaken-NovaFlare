@@ -1,7 +1,7 @@
-package scripts.lua;
+﻿package scripts.lua;
 
-import backend.WeekData;
-import objects.Character;
+import game.funkin.backend.WeekData;
+import game.funkin.objects.Character;
 import openfl.display.BlendMode;
 import Type.ValueType;
 import substates.GameOverSubstate;
@@ -567,3 +567,4 @@ class LuaUtils
 		return PlayState.instance.camGame;
 	}
 }
+

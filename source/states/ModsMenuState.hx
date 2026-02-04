@@ -1,6 +1,6 @@
-package states;
+﻿package states;
 
-import backend.WeekData;
+import game.funkin.backend.WeekData;
 import backend.Mods;
 import flixel.ui.FlxButton;
 import flixel.FlxBasic;
@@ -336,14 +336,6 @@ class ModsMenuState extends MusicBeatState
 				TitleState.initialized = false;
 				TitleState.closedState = false;
 				FlxG.sound.music.fadeOut(0.3);
-				if (!ClientPrefs.data.freeplayOld)
-				{
-					if (FreeplayState.vocalsPlayer1 != null)
-					{
-						FreeplayState.vocalsPlayer1.fadeOut(0.3);
-						FreeplayState.vocalsPlayer1 = null;
-					}
-				}
 				FlxG.camera.fade(FlxColor.BLACK, 0.5, false, FlxG.resetGame, false);
 				isFreePlay = false;
 			}
@@ -353,10 +345,7 @@ class ModsMenuState extends MusicBeatState
 					MusicBeatState.switchState(new MainMenuState());
 				else
 				{
-					if (!ClientPrefs.data.freeplayOld)
-						MusicBeatState.switchState(new states.FreeplayState());
-					else
-						MusicBeatState.switchState(new states.FreeplayStatePsych());
+					MusicBeatState.switchState(new states.freeplayState.FreeplayState());
 				}
 				isFreePlay = false;
 			}
@@ -410,14 +399,6 @@ class ModsMenuState extends MusicBeatState
 				TitleState.initialized = false;
 				TitleState.closedState = false;
 				FlxG.sound.music.fadeOut(0.3);
-				if (!ClientPrefs.data.freeplayOld)
-				{
-					if (FreeplayState.vocalsPlayer1 != null)
-					{
-						FreeplayState.vocalsPlayer1.fadeOut(0.3);
-						FreeplayState.vocalsPlayer1 = null;
-					}
-				}
 				FlxG.camera.fade(FlxColor.BLACK, 0.5, false, FlxG.resetGame, false);
 			}
 			else
@@ -1177,3 +1158,4 @@ class MenuButton extends FlxSpriteGroup
 		spr.y = bg.height / 2 - spr.height / 2;
 	}
 }
+

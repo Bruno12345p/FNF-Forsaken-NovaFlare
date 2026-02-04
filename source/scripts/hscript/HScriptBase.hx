@@ -1,7 +1,7 @@
-package scripts.hscript;
+﻿package scripts.hscript;
 
 import flixel.FlxBasic;
-import objects.Character;
+import game.funkin.objects.Character;
 import scripts.lua.LuaUtils;
 import scripts.lua.CustomSubstate;
 #if LUA_ALLOWED
@@ -275,3 +275,4 @@ class HScriptBase
 	#end
 }
 #end
+

@@ -1,8 +1,8 @@
-package states;
+﻿package states;
 
 import flixel.FlxObject;
 import flixel.util.FlxSort;
-import objects.Bar;
+import game.funkin.objects.Bar;
 import flixel.addons.transition.FlxTransitionableState;
 
 #if ACHIEVEMENTS_ALLOWED
@@ -397,3 +397,4 @@ class ResetAchievementSubstate extends MusicBeatSubstate
 	}
 }
 #end
+

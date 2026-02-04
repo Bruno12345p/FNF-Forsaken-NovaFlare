@@ -1,7 +1,7 @@
-package shaders;
+﻿package shaders;
 
 import flixel.system.FlxAssets.FlxShader;
-import objects.Note;
+import game.funkin.objects.Note;
 
 class RGBPalette
 {
@@ -171,3 +171,4 @@ class RGBPaletteShader extends FlxShader
 		super();
 	}
 }
+

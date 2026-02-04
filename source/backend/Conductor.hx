@@ -1,8 +1,9 @@
-package backend;
+﻿package backend;
 
-import backend.Song;
-import backend.Section;
-import objects.Note;
+import game.funkin.backend.Song;
+import game.funkin.backend.Section;
+import game.funkin.objects.Note;
+import game.funkin.backend.Rating;
 
 typedef BPMChangeEvent =
 {
@@ -158,3 +159,4 @@ class Conductor
 		return bpm = newBPM;
 	}
 }
+

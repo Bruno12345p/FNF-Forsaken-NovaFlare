@@ -1,13 +1,12 @@
-package substates;
+﻿package substates;
 
-import backend.Difficulty;
+import game.funkin.backend.Difficulty;
 import backend.MusicBeatState;
-import backend.WeekData;
-import backend.Highscore;
-import backend.Song;
-import states.editors.ChartingState;
-import states.FreeplayState;
-import states.FreeplayStatePsych;
+import game.funkin.backend.WeekData;
+import game.funkin.backend.Highscore;
+import game.funkin.backend.Song;
+import editors.ChartingState;
+import states.freeplayState.FreeplayState;
 import states.StoryMenuState;
 import options.OptionsState;
 import flixel.util.FlxStringUtil;
@@ -646,10 +645,7 @@ class PauseSubState extends MusicBeatSubstate
 					else
 					{
 						PlayState.replayMode = false;
-						if (!ClientPrefs.data.freeplayOld)
-							MusicBeatState.switchState(new FreeplayState());
-						else
-							MusicBeatState.switchState(new FreeplayStatePsych());
+						MusicBeatState.switchState(new FreeplayState());
 					}
 					FlxG.sound.playMusic(Paths.music('freakyMenu'));
 					PlayState.changedDifficulty = false;
@@ -901,3 +897,4 @@ class PauseSubState extends MusicBeatSubstate
 			+ FlxStringUtil.formatTime(Math.max(0, Math.floor(FlxG.sound.music.length / 1000)), false);
 	}
 }
+

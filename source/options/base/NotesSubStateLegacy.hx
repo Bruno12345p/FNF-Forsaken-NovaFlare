@@ -1,4 +1,4 @@
-package options.base;
+﻿package options.base;
 
 import flash.text.TextField;
 import flixel.FlxG;
@@ -22,7 +22,7 @@ import flixel.input.keyboard.FlxKey;
 import flixel.graphics.FlxGraphic;
 import shaders.ColorSwap;
 using StringTools;
-import objects.Note;
+import game.funkin.objects.Note;
 class NotesSubStateLegacy extends MusicBeatSubstate
 {
 	private static var curSelected:Int = 0;

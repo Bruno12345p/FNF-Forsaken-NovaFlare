@@ -1,10 +1,10 @@
-package;
+﻿package;
 
 import developer.display.FPSViewer;
 import developer.display.Graphics;
 import developer.console.TraceInterceptor;
 
-import screen.mouseEvent.MouseEffect;
+import objects.screen.MouseEffect;
 
 import flixel.graphics.FlxGraphic;
 import flixel.FlxGame;
@@ -23,7 +23,7 @@ import states.TitleState;
 import states.backend.InitState;
 import states.backend.PassState;
 import mobile.backend.Data;
-import backend.extraKeys.ExtraKeysHandler;
+import game.funkin.backend.ExtraKeysHandler;
 
 #if android
 import backend.device.AppData;
@@ -40,7 +40,7 @@ import hl.Api;
 #if linux
 import lime.graphics.Image;
 
-@:cppInclude('./external/gamemode_client.h')
+@:cppInclude('./backend/external/gamemode_client.h')
 @:cppFileCode('
 	#define GAMEMODE_AUTO
 ')
@@ -48,7 +48,7 @@ import lime.graphics.Image;
 
 class Main extends Sprite
 {
-	private static var game = {
+	private static var gameConfig = {
 		width: 1280, // WINDOW width
 		height: 720, // WINDOW height
 		initialState: InitState,
@@ -121,13 +121,13 @@ class Main extends Sprite
 		var stageWidth:Int = Lib.current.stage.stageWidth;
 		var stageHeight:Int = Lib.current.stage.stageHeight;
 
-		if (game.zoom == -1.0)
+		if (gameConfig.zoom == -1.0)
 		{
-			var ratioX:Float = stageWidth / game.width;
-			var ratioY:Float = stageHeight / game.height;
-			game.zoom = Math.min(ratioX, ratioY);
-			game.width = Math.ceil(stageWidth / game.zoom);
-			game.height = Math.ceil(stageHeight / game.zoom);
+			var ratioX:Float = stageWidth / gameConfig.width;
+			var ratioY:Float = stageHeight / gameConfig.height;
+			gameConfig.zoom = Math.min(ratioX, ratioY);
+			gameConfig.width = Math.ceil(stageWidth / gameConfig.zoom);
+			gameConfig.height = Math.ceil(stageHeight / gameConfig.zoom);
 		}
 
 		Toolkit.init();
@@ -162,7 +162,7 @@ class Main extends Sprite
 		ExtraKeysHandler.instance = new ExtraKeysHandler();
 		ClientPrefs.loadDefaultKeys();
 
-		var flxGame:FlxGame = new FlxGame(#if (openfl >= "9.2.0") 1280, 720 #else game.width, game.height #end,game.initialState, #if (flixel < "5.0.0") game.zoom, #end game.framerate, game.framerate, game.skipSplash, game.startFullscreen);
+		var flxGame:FlxGame = new FlxGame(#if (openfl >= "9.2.0") 1280, 720 #else gameConfig.width, gameConfig.height #end,gameConfig.initialState, #if (flixel < "5.0.0") gameConfig.zoom, #end gameConfig.framerate, gameConfig.framerate, gameConfig.skipSplash, gameConfig.startFullscreen);
 		addChild(flxGame);
 
 		fpsVar = new FPSViewer(0, 0);
@@ -249,7 +249,7 @@ class Main extends Sprite
 			"FlxText" => flixel.text.FlxText,
 
 			"MusicBeatState" => backend.MusicBeatState,
-			"PlayState" => states.PlayState,
+			"PlayState" => game.funkin.PlayState,
 			"Application" => lime.app.Application,
 
 			// Engine Something
@@ -270,3 +270,4 @@ class Main extends Sprite
 			FlxG.fullscreen = !FlxG.fullscreen;
 	}
 }
+

@@ -1,7 +1,7 @@
-package states.backend;
+﻿package states.backend;
 
-import backend.WeekData;
-import backend.Highscore;
+import game.funkin.backend.WeekData;
+import game.funkin.backend.Highscore;
 
 import flixel.addons.transition.FlxTransitionableState;
 import flixel.input.gamepad.FlxGamepad;
@@ -15,7 +15,7 @@ import shaders.ColorblindFilter;
 import states.StoryMenuState;
 import states.OutdatedState;
 import states.MainMenuState;
-import states.FreeplayState;
+import states.freeplayState.FreeplayState;
 import states.TitleState;
 #if mobile
 import mobile.states.CopyState;
@@ -399,3 +399,4 @@ class InitState extends MusicBeatState
 		}
 	}
 }
+

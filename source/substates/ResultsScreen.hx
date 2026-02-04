@@ -1,4 +1,4 @@
-package substates;
+﻿package substates;
 
 /*
 	ResultsScreen made by NF|beihu (北狐丶逐梦)
@@ -15,15 +15,14 @@ package substates;
 	by the way dont move this to hscript,I dont allow it
  */
 import flixel.addons.transition.FlxTransitionableState;
-import states.PlayState;
-import states.FreeplayState;
-import states.FreeplayStatePsych;
+import game.funkin.PlayState;
+import states.freeplayState.FreeplayState;
 import states.MainMenuState;
 import backend.Conductor;
 import backend.Mods;
-import backend.Highscore;
-import backend.diffCalc.DiffCalc;
-import backend.Song;
+import game.funkin.backend.Highscore;
+import game.funkin.backend.diffCalc.DiffCalc;
+import game.funkin.backend.Song;
 import flixel.math.FlxRect;
 import flixel.util.FlxSpriteUtil;
 import openfl.display.BitmapData;
@@ -106,7 +105,7 @@ class ResultsScreen extends MusicBeatSubstate
 		super();
 
 		if (PlayState.replayMode)
-			game = backend.Replay;
+			game = game.funkin.backend.Replay;
 
 		cameras = [FlxG.cameras.list[FlxG.cameras.list.length - 1]];
 
@@ -835,10 +834,7 @@ class ResultsScreen extends MusicBeatSubstate
 					else
 					{
 						Mods.loadTopMod();
-						if (!ClientPrefs.data.freeplayOld)
-							MusicBeatState.switchState(new FreeplayState());
-						else
-							MusicBeatState.switchState(new FreeplayStatePsych());
+						MusicBeatState.switchState(new FreeplayState());
 					}
 				},
 				ease: FlxEase.expoInOut
@@ -921,10 +917,7 @@ class ResultsScreen extends MusicBeatSubstate
 					else
 					{
 						Mods.loadTopMod();
-						if (!ClientPrefs.data.freeplayOld)
-							MusicBeatState.switchState(new FreeplayState());
-						else
-							MusicBeatState.switchState(new FreeplayStatePsych());
+						MusicBeatState.switchState(new FreeplayState());
 					}
 				},
 				ease: FlxEase.sineInOut
@@ -1022,3 +1015,4 @@ class ResultsScreen extends MusicBeatSubstate
 	}
 		*/
 }
+

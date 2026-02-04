@@ -1,3 +1,5 @@
+﻿package scripts.stages;
+
 #if !macro
 import scripts.hscript.HScript;
 import haxe.io.Path;

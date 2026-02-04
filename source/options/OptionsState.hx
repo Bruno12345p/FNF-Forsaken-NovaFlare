@@ -1,14 +1,12 @@
-package options;
+﻿package options;
 
 import states.MainMenuState;
-import states.FreeplayState;
-import states.FreeplayStatePsych;
+import states.freeplayState.FreeplayState;
 import mobile.substates.MobileControlSelectSubState;
 import mobile.substates.MobileExtraControl;
 import mobile.states.CopyState;
 import backend.ClientPrefs;
-import language.Language;
-import backend.StageData;
+import game.funkin.backend.StageData;
 
 import options.base.NewControlsSubState;
 
@@ -476,3 +474,4 @@ class OptionsState extends MusicBeatState
 		}
 	}
 }
+

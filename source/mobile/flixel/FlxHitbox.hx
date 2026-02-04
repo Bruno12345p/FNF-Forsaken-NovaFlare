@@ -1,12 +1,12 @@
-package mobile.flixel;
+﻿package mobile.flixel;
 
 import mobile.flixel.input.FlxMobileInputManager;
 import openfl.display.BitmapData;
 import mobile.flixel.FlxButton;
 import openfl.display.Shape;
 import mobile.flixel.input.FlxMobileInputID;
-import states.PlayState;
-import backend.extraKeys.ExtraKeysHandler;
+import game.funkin.PlayState;
+import game.funkin.backend.ExtraKeysHandler;
 import flixel.util.FlxColor;
 
 import openfl.Lib;
@@ -383,3 +383,4 @@ class FlxHitbox extends FlxMobileInputManager
 		return bitmap;
 	}
 }
+
