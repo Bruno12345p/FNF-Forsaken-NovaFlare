@@ -1,4 +1,4 @@
-package states;
+package states.backend;
 
 import states.MainMenuState;
 

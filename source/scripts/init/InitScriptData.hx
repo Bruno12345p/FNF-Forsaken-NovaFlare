@@ -116,7 +116,7 @@ class InitScriptData {
         Iris.proxyImports.set("states.loadingState.LoadingState", states.loadingState.LoadingState);
         Iris.proxyImports.set("states.MainMenuState", states.MainMenuState);
         Iris.proxyImports.set("states.ModsMenuState", states.ModsMenuState);
-        Iris.proxyImports.set("states.OutdatedState", states.OutdatedState);
+        Iris.proxyImports.set("states.OutdatedState", states.backend.OutdatedState);
         Iris.proxyImports.set("game.funkin.PlayState", game.funkin.PlayState);
         Iris.proxyImports.set("states.ScaleSimulationState", states.backend.ScaleSimulationState);
         Iris.proxyImports.set("states.StoryMenuState", states.StoryMenuState);
@@ -233,7 +233,7 @@ class InitScriptData {
         Iris.proxyImports.set("LoadingState", states.loadingState.LoadingState);
         Iris.proxyImports.set("MainMenuState", states.MainMenuState);
         Iris.proxyImports.set("ModsMenuState", states.ModsMenuState);
-        Iris.proxyImports.set("OutdatedState", states.OutdatedState);
+        Iris.proxyImports.set("OutdatedState", states.backend.OutdatedState);
         Iris.proxyImports.set("PlayState", game.funkin.PlayState);
         Iris.proxyImports.set("StoryMenuState", states.StoryMenuState);
         Iris.proxyImports.set("TitleState", states.TitleState);

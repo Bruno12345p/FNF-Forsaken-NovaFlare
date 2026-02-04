@@ -13,7 +13,7 @@ import openfl.events.KeyboardEvent;
 
 import shaders.ColorblindFilter;
 import states.StoryMenuState;
-import states.OutdatedState;
+import states.backend.OutdatedState;
 import states.MainMenuState;
 import states.freeplayState.FreeplayState;
 import states.TitleState;
