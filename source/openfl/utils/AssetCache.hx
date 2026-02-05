@@ -1,11 +1,12 @@
 package openfl.utils;
 
-import openfl.display.BitmapData;
-import openfl.media.Sound;
-import openfl.text.Font;
 #if lime
 import lime.utils.Assets as LimeAssets;
 #end
+
+import openfl.display.BitmapData;
+import openfl.media.Sound;
+import openfl.text.Font;
 
 /**
 	The AssetCache class is the default cache implementation used

@@ -1,9 +1,49 @@
 ﻿package game.funkin;
 
+import haxe.Timer;
+import haxe.Json;
+
+import cpp.vm.Gc;
+
+import sys.thread.Thread;
+import sys.thread.Mutex;
+
+import openfl.utils.Assets;
+import openfl.events.KeyboardEvent;
+
+import flixel.FlxBasic;
+import flixel.FlxObject;
+import flixel.FlxSubState;
+import flixel.util.FlxSort;
+import flixel.util.FlxStringUtil;
+import flixel.util.FlxSave;
+import flixel.input.keyboard.FlxKey;
+import flixel.animation.FlxAnimationController;
+import flixel.input.touch.FlxTouch;
+
+import modchart.Manager;
+
+import objects.AttachedSprite;
+
+import states.StoryMenuState;
+import states.freeplayState.FreeplayState;
+
+import editors.ChartingState;
+import editors.CharacterEditorState;
+
+import substates.PauseSubState;
+import substates.GameOverSubstate;
+import substates.ResultsScreen;
+
+import shaders.ErrorHandledShader;
+
+import game.funkin.stages.*;
+
+import game.funkin.objects.*;
+import game.funkin.objects.Note.EventNote;
 import game.funkin.objects.StrumNote.KeybindShowcase;
 import game.funkin.objects.StrumNote.StrumBoundaries;
 
-import game.funkin.backend.ExtraKeysHandler;
 import game.funkin.backend.Highscore;
 import game.funkin.backend.StageData;
 import game.funkin.backend.WeekData;
@@ -12,57 +52,28 @@ import game.funkin.backend.Section;
 import game.funkin.backend.Rating;
 import game.funkin.backend.Replay;
 import game.funkin.backend.TimingSystem;
-import sys.thread.Thread;
-import sys.thread.Mutex;
-import haxe.Timer;
-import flixel.FlxBasic;
-import flixel.FlxObject;
-import flixel.FlxSubState;
-import flixel.addons.transition.FlxTransitionableState;
-import flixel.util.FlxSort;
-import flixel.util.FlxStringUtil;
-import flixel.util.FlxSave;
-import flixel.util.FlxDestroyUtil;
-import flixel.input.keyboard.FlxKey;
-import flixel.animation.FlxAnimationController;
-import flixel.input.touch.FlxTouch;
-import openfl.utils.Assets;
-import openfl.events.KeyboardEvent;
-import haxe.Json;
+
 import game.funkin.cutscenes.CutsceneHandler;
 import game.funkin.cutscenes.DialogueBoxPsych;
-import states.StoryMenuState;
-import states.freeplayState.FreeplayState;
-import editors.ChartingState;
-import editors.CharacterEditorState;
-import substates.PauseSubState;
-import substates.GameOverSubstate;
-import substates.ResultsScreen;
-import shaders.ErrorHandledShader;
+
 #if CUSTOM_SHADERS_ALLOWED
 import shaders.CustomShaders;
 import shaders.openfl.filters.ShaderFilter as CustomShaderFilter;
 import openfl.filters.BitmapFilter;
 #end
-import game.funkin.objects.Note.EventNote;
-import game.funkin.objects.*;
-import game.funkin.stages.*;
 
-import objects.AttachedSprite;
 #if LUA_ALLOWED
 import scripts.lua.*;
 #else
 import scripts.lua.LuaUtils;
 #end
+
 #if HSCRIPT_ALLOWED
 import scripts.hscript.HScript;
 import scripts.hscript.HScriptPack;
 import crowplexus.hscript.Expr.Error as IrisError;
 import crowplexus.hscript.Printer;
 #end
-import modchart.Manager;
-
-import cpp.vm.Gc;
 
 @:allow(game.funkin.backend.Replay)
 /**

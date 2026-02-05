@@ -1,8 +1,8 @@
 ﻿package game.funkin.backend.diffCalc;
+
 import game.funkin.backend.Section.SwagSection;
 import game.funkin.backend.Song.SwagSong;
 import game.funkin.backend.Song;
-import backend.ClientPrefs;
 
 class StarRating {
     public static function calcForSong(song:SwagSong):Float {

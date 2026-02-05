@@ -1,33 +1,25 @@
 package substates;
 
-import objects.AudioCircleDisplay;
-import objects.AudioDisplay;
-import objects.state.relaxState.*;
-import objects.state.relaxState.windows.PlayListWindow;
-import objects.state.relaxState.windows.OptionWindow;
-import objects.state.relaxState.backend.*;
+import sys.thread.Thread;
 
 import openfl.filters.BlurFilter;
 import openfl.display.Shape;
 import openfl.media.Sound;
 
 import flixel.graphics.frames.FlxFilterFrames;
-import flixel.tweens.FlxEase;
-import flixel.tweens.FlxTween;
 import flixel.util.FlxSpriteUtil;
-import flixel.util.FlxColor;
-import flixel.FlxSprite;
-import flixel.text.FlxText;
-import flixel.sound.FlxSound;
 import flixel.system.FlxAssets.FlxSoundAsset;
 import flixel.system.FlxAssets.FlxGraphicAsset;
-import flixel.util.FlxTimer;
-
-import sys.thread.Thread;
 
 import backend.relax.GetInit;
 import backend.relax.GetInit.SongLists;
 import backend.relax.GetInit.SongInfo;
+
+import objects.AudioCircleDisplay;
+import objects.state.relaxState.*;
+import objects.state.relaxState.windows.PlayListWindow;
+import objects.state.relaxState.windows.OptionWindow;
+import objects.state.relaxState.backend.*;
 
 /*
     这一大坨屎山代码出自MaoPou https://github.com/MaoPou

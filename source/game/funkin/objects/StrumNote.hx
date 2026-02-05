@@ -1,9 +1,10 @@
 ﻿package game.funkin.objects;
 
-import backend.InputFormatter;
 import flixel.FlxBasic;
-import game.funkin.backend.ExtraKeysHandler;
+
+import backend.InputFormatter;
 import backend.animation.PsychAnimationController;
+
 import shaders.RGBPalette;
 import shaders.RGBPalette.RGBShaderReference;
 import shaders.ColorSwap;

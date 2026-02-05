@@ -3,6 +3,18 @@
 import haxe.Json;
 import haxe.format.JsonParser;
 import haxe.io.Bytes;
+
+import lime.media.AudioBuffer;
+
+import openfl.utils.Assets;
+import openfl.events.Event;
+import openfl.events.IOErrorEvent;
+import openfl.media.Sound;
+import openfl.geom.Rectangle;
+import openfl.net.FileReference;
+import openfl.system.System;
+import openfl.media.Sound;
+
 import flixel.FlxObject;
 import flixel.addons.display.FlxGridOverlay;
 import flixel.addons.ui.FlxUI;
@@ -15,14 +27,12 @@ import flixel.addons.ui.FlxUITabMenu;
 import flixel.group.FlxGroup;
 import flixel.ui.FlxButton;
 import flixel.util.FlxSort;
-import lime.media.AudioBuffer;
-import openfl.utils.Assets;
-import openfl.events.Event;
-import openfl.events.IOErrorEvent;
-import openfl.media.Sound;
-import openfl.geom.Rectangle;
-import openfl.net.FileReference;
-import openfl.system.System;
+import flixel.util.FlxStringUtil;
+
+import objects.AttachedSprite;
+
+import substates.Prompt;
+
 import game.funkin.backend.Song;
 import game.funkin.backend.Section;
 import game.funkin.backend.StageData;
@@ -30,12 +40,7 @@ import game.funkin.objects.Note;
 import game.funkin.objects.StrumNote;
 import game.funkin.objects.NoteSplash;
 import game.funkin.objects.HealthIcon;
-import objects.AttachedSprite;
 import game.funkin.objects.Character;
-import developer.display.DataCalc;
-import substates.Prompt;
-import flixel.util.FlxStringUtil;
-import openfl.media.Sound;
 
 @:access(flixel.sound.FlxSound._sound)
 @:access(openfl.media.Sound.__buffer)

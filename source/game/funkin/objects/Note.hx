@@ -1,16 +1,17 @@
 ﻿package game.funkin.objects;
 
-import game.funkin.backend.ExtraKeysHandler;
+import flixel.math.FlxRect;
+
 import backend.animation.PsychAnimationController;
-import game.funkin.backend.NoteTypesConfig;
+
 import shaders.RGBPalette;
 import shaders.ColorSwap;
 import shaders.RGBPalette.RGBShaderReference;
-import editors.EditorPlayState;
-import game.funkin.objects.StrumNote;
-import flixel.math.FlxRect;
 
-using StringTools;
+import editors.EditorPlayState;
+
+import game.funkin.backend.NoteTypesConfig;
+import game.funkin.objects.StrumNote;
 
 typedef EventNote =
 {

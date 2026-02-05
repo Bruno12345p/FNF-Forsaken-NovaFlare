@@ -1,15 +1,14 @@
 ﻿package states;
 
+import haxe.Json;
+
+import substates.GameplayChangersSubstate;
+import substates.ResetScoreSubState;
+
 import game.funkin.backend.WeekData;
 import game.funkin.backend.Highscore;
 import game.funkin.backend.Song;
 import game.funkin.objects.HealthIcon;
-import substates.GameplayChangersSubstate;
-import substates.ResetScoreSubState;
-import flixel.addons.transition.FlxTransitionableState;
-import flixel.math.FlxMath;
-import flixel.util.FlxDestroyUtil;
-import haxe.Json;
 
 class FreeplayStatePsych extends MusicBeatState
 {

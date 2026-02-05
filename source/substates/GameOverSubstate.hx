@@ -1,14 +1,13 @@
 ﻿package substates;
 
-import game.funkin.backend.WeekData;
-
-import game.funkin.objects.Character;
 import flixel.FlxObject;
 import flixel.FlxSubState;
-import flixel.math.FlxPoint;
 
 import states.StoryMenuState;
 import states.freeplayState.FreeplayState;
+
+import game.funkin.backend.WeekData;
+import game.funkin.objects.Character;
 
 class GameOverSubstate extends MusicBeatSubstate
 {

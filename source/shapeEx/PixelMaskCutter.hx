@@ -1,11 +1,8 @@
 package shapeEx;
 
-import flixel.FlxObject;
-import flixel.FlxSprite;
 import openfl.display.BitmapData;
-import flixel.FlxG;
-import flixel.FlxCamera;
-import flixel.math.FlxPoint;
+
+import flixel.FlxObject;
 
 class PixelMaskCutter
 {

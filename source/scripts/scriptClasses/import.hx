@@ -1,7 +1,7 @@
 ﻿package scripts.scriptClasses;
 
 #if !macro
-import crowplexus.hscript.scriptclass.IScriptedClass;
-
 import flixel.group.FlxGroup;
+
+import crowplexus.hscript.scriptclass.IScriptedClass;
 #end

@@ -1,9 +1,11 @@
 ﻿package game.funkin.stages;
 
-import game.funkin.stages.objects.*;
-import substates.GameOverSubstate;
-import game.funkin.cutscenes.DialogueBox;
 import openfl.utils.Assets as OpenFlAssets;
+
+import substates.GameOverSubstate;
+
+import game.funkin.stages.objects.*;
+import game.funkin.cutscenes.DialogueBox;
 
 class School extends BaseStage
 {

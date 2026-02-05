@@ -1,10 +1,14 @@
 ﻿package game.funkin.stages;
 
 import openfl.filters.ShaderFilter;
-import shaders.RainShader;
+
 import flixel.addons.display.FlxTiledSprite;
 import flixel.graphics.frames.FlxAtlasFrames;
+
+import shaders.RainShader;
+
 import substates.GameOverSubstate;
+
 import game.funkin.stages.objects.*;
 import game.funkin.objects.Note;
 import game.funkin.cutscenes.CutsceneHandler;

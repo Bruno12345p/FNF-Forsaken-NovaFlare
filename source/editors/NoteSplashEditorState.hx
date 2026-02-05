@@ -1,15 +1,19 @@
 ﻿package editors;
 
-import game.funkin.objects.Note;
-import game.funkin.objects.NoteSplash;
-import game.funkin.objects.StrumNote;
+import haxe.Json;
+
 import openfl.net.FileFilter;
-import flixel.group.FlxSpriteGroup.FlxTypedSpriteGroup;
-import flixel.input.keyboard.FlxKey;
 import openfl.events.Event;
 import openfl.events.IOErrorEvent;
 import openfl.net.FileReference;
-import haxe.Json;
+
+import flixel.group.FlxSpriteGroup.FlxTypedSpriteGroup;
+import flixel.input.keyboard.FlxKey;
+
+import game.funkin.objects.Note;
+import game.funkin.objects.NoteSplash;
+import game.funkin.objects.StrumNote;
+
 
 @:access(game.funkin.objects.NoteSplash)
 class NoteSplashEditorState extends MusicBeatState

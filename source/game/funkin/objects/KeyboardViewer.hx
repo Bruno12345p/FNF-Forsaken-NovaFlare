@@ -6,11 +6,12 @@ import openfl.display.Shape;
 import openfl.utils.Assets;
 
 import flixel.graphics.FlxGraphic;
-
 import flixel.util.FlxSave;
-import game.funkin.PlayState;
+
 import backend.InputFormatter;
+
 import options.OptionsHelpers;
+
 import game.funkin.backend.Song;
 
 class KeyboardViewer extends FlxSpriteGroup

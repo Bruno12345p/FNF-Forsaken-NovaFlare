@@ -1,7 +1,5 @@
 ﻿package game.funkin.backend;
 
-import backend.ClientPrefs;
-
 class Rating
 {
 	public var name:String = '';

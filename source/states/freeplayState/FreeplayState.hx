@@ -1,19 +1,19 @@
 ﻿package states.freeplayState;
 
-import flixel.addons.transition.FlxTransitionableState;
-
 import haxe.Json;
 import haxe.ds.ArraySort;
 
+import sys.thread.Thread;
+import sys.thread.Mutex;
+
 import openfl.system.System;
 
-import game.funkin.backend.WeekData;
-import game.funkin.backend.Highscore;
-import game.funkin.backend.Song;
-import game.funkin.backend.diffCalc.DiffCalc;
-import game.funkin.backend.Replay;
-import game.funkin.backend.diffCalc.StarRating;
+import editors.ChartingState;
 
+import options.OptionsState;
+
+import states.MainMenuState;
+import states.freeplayState.shader.BlurFilter;
 import states.freeplayState.backend.*;
 import states.freeplayState.backend.PreThreadLoad.DataPrepare;
 import states.freeplayState.objects.detail.*;
@@ -26,15 +26,12 @@ import substates.GameplayChangersSubstate;
 import substates.ResetScoreSubState;
 import substates.ErrorSubState;
 
-import states.MainMenuState;
-import game.funkin.PlayState;
-import states.loadingState.LoadingState;
-import editors.ChartingState;
-import options.OptionsState;
-import states.freeplayState.shader.BlurFilter;
-
-import sys.thread.Thread;
-import sys.thread.Mutex;
+import game.funkin.backend.WeekData;
+import game.funkin.backend.Highscore;
+import game.funkin.backend.Song;
+import game.funkin.backend.diffCalc.DiffCalc;
+import game.funkin.backend.Replay;
+import game.funkin.backend.diffCalc.StarRating;
 
 class FreeplayState extends MusicBeatState
 {

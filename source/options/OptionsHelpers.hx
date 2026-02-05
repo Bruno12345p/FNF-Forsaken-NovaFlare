@@ -1,8 +1,5 @@
 package options;
 
-import sys.FileSystem;
-import sys.io.File;
-
 class OptionsHelpers
 {
 	public static function colorArray(data:String):FlxColor

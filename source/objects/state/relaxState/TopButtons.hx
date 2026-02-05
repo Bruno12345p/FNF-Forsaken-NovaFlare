@@ -1,12 +1,6 @@
 package objects.state.relaxState;
 
-import flixel.tweens.FlxTween;
-import flixel.util.FlxColor;
-import flixel.math.FlxPoint;
-import flixel.math.FlxMath;
 import flixel.util.FlxSpriteUtil;
-import flixel.group.FlxSpriteGroup;
-import flixel.FlxG;
 
 class TopButtons extends FlxSpriteGroup
 {

@@ -1,12 +1,9 @@
 package backend.relax;
 
-import sys.FileSystem;
-import sys.io.File;
+import haxe.Json;
 
 import flixel.system.FlxAssets.FlxSoundAsset;
 import flixel.system.FlxAssets.FlxGraphicAsset;
-
-import haxe.Json;
 
 typedef SongInfo = {
 	name: String, 							// 歌曲名称

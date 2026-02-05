@@ -1,7 +1,9 @@
 package scripts.lua;
 
-import Type.ValueType;
 import haxe.Constraints;
+
+import Type.ValueType;
+
 import substates.GameOverSubstate;
 
 //

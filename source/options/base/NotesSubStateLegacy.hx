@@ -1,28 +1,21 @@
 ﻿package options.base;
 
-import flash.text.TextField;
-import flixel.FlxG;
-import flixel.FlxSprite;
-import flixel.addons.display.FlxGridOverlay;
-import flixel.group.FlxGroup.FlxTypedGroup;
-import flixel.math.FlxMath;
-import flixel.text.FlxText;
-import flixel.util.FlxColor;
-import lime.utils.Assets;
-import flixel.FlxSubState;
-import flash.text.TextField;
-import flixel.FlxG;
-import flixel.FlxSprite;
-import flixel.util.FlxSave;
 import haxe.Json;
-import flixel.tweens.FlxEase;
-import flixel.tweens.FlxTween;
-import flixel.util.FlxTimer;
+
+import flash.text.TextField;
+
+import lime.utils.Assets;
+
+import flixel.addons.display.FlxGridOverlay;
+import flixel.FlxSubState;
+import flixel.util.FlxSave;
 import flixel.input.keyboard.FlxKey;
 import flixel.graphics.FlxGraphic;
+
 import shaders.ColorSwap;
-using StringTools;
+
 import game.funkin.objects.Note;
+
 class NotesSubStateLegacy extends MusicBeatSubstate
 {
 	private static var curSelected:Int = 0;

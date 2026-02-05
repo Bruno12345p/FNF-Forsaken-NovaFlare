@@ -3,15 +3,13 @@ package mobile.backend;
 import openfl.events.UncaughtErrorEvent;
 import openfl.events.ErrorEvent;
 import openfl.errors.Error;
-import flixel.FlxSubState;
-import substates.ErrorSubState;
-import states.MainMenuState;
-#if sys
-import sys.FileSystem;
-import sys.io.File;
-#end
 
-using StringTools;
+import flixel.FlxSubState;
+
+import states.MainMenuState;
+
+import substates.ErrorSubState;
+
 using backend.CoolUtil;
 
 /**

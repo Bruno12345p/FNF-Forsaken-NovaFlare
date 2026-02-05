@@ -1,6 +1,5 @@
 ﻿package server.http;
 
-import sys.Http;
 import sys.thread.Thread;
 
 class OnlineStatistics {

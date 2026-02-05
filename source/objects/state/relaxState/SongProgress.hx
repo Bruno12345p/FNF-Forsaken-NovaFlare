@@ -1,10 +1,5 @@
 package objects.state.relaxState;
 
-import flixel.FlxSprite;
-import flixel.math.FlxMath;
-import flixel.text.FlxText;
-import flixel.util.FlxColor;
-import flixel.group.FlxSpriteGroup;
 import flixel.util.FlxSpriteUtil;
 
 class SongProgress extends FlxSpriteGroup

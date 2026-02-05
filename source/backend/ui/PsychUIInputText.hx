@@ -1,12 +1,14 @@
 package backend.ui;
 
-import flixel.FlxObject;
-import flixel.input.keyboard.FlxKey;
-import flixel.util.FlxDestroyUtil;
 import flash.events.KeyboardEvent;
+
 import lime.system.Clipboard;
 import lime.math.Rectangle;
+
 import openfl.Lib;
+
+import flixel.FlxObject;
+import flixel.input.keyboard.FlxKey;
 
 enum abstract AccentCode(Int) from Int from UInt to Int to UInt
 {

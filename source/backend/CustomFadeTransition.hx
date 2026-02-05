@@ -1,13 +1,11 @@
 package backend;
 
-import flixel.util.FlxGradient;
-import flixel.text.FlxText;
-import flixel.tweens.FlxTween;
-import flixel.util.FlxColor;
-import flixel.FlxSubState;
-import flixel.FlxSprite;
 import openfl.utils.Assets;
+
+import flixel.util.FlxGradient;
+import flixel.FlxSubState;
 import flixel.FlxObject;
+
 import states.MainMenuState;
 
 class CustomFadeTransition extends FlxSubState

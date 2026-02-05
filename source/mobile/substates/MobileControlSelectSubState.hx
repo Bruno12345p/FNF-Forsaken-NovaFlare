@@ -1,12 +1,13 @@
 package mobile.substates;
 
 import openfl.sensors.Accelerometer;
-import mobile.flixel.FlxButton;
-import flixel.addons.transition.FlxTransitionableState;
+import openfl.utils.Assets;
+
 import flixel.util.FlxSave;
 import flixel.input.touch.FlxTouch;
-import openfl.utils.Assets;
 import flixel.ui.FlxButton as UIButton;
+
+import mobile.flixel.FlxButton;
 
 class MobileControlSelectSubState extends MusicBeatSubstate
 {

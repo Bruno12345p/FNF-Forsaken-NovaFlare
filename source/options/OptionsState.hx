@@ -2,13 +2,14 @@
 
 import states.MainMenuState;
 import states.freeplayState.FreeplayState;
+
+import options.base.NewControlsSubState;
+
 import mobile.substates.MobileControlSelectSubState;
 import mobile.substates.MobileExtraControl;
 import mobile.states.CopyState;
-import backend.ClientPrefs;
-import game.funkin.backend.StageData;
 
-import options.base.NewControlsSubState;
+import game.funkin.backend.StageData;
 
 class OptionsState extends MusicBeatState
 {

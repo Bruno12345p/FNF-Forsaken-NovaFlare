@@ -1,7 +1,5 @@
 package backend.data;
 
-import developer.display.DataCalc;
-
 class EngineSet
 {
     static public var mainColor:FlxColor = 0x96B5FF;

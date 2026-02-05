@@ -1,17 +1,19 @@
 ﻿package states.loadingState.backend;
 
+import haxe.MainLoop;
+
+import sys.thread.Thread;
+
 import lime.app.Application;
 import lime.graphics.Image;
 import lime.graphics.opengl.GL;
 import lime.graphics.opengl.GLTexture;
 import lime.graphics.opengl.GL;
-import openfl.display3D.textures.RectangleTexture;
-import openfl.display.BitmapData;
-import flixel.FlxG;
-import sys.thread.Thread;
-import haxe.MainLoop;
 import lime.system.ThreadPool;
 import lime.app.Application;
+
+import openfl.display3D.textures.RectangleTexture;
+import openfl.display.BitmapData;
 
 /**
  * 异步纹理上传工具类

@@ -1,13 +1,13 @@
 package shaders;
 
 #if CUSTOM_SHADERS_ALLOWED
-import shaders.flixel.system.FlxShader;
-import shaders.openfl.filters.ShaderFilter;
 import openfl.display.ShaderParameter;
 import openfl.display.ShaderParameterType;
 import openfl.display.BitmapData;
 import openfl.display.ShaderInput;
 import openfl.Lib;
+
+import shaders.openfl.filters.ShaderFilter;
 
 typedef ShaderEffect =
 {

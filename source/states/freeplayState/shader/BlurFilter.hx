@@ -26,8 +26,9 @@ package states.freeplayState.shader;
  * @since 1.0
  * @author HEIHUA, deepseek
  */
-import flixel.addons.display.FlxRuntimeShader;
 import openfl.filters.ShaderFilter;
+
+import flixel.addons.display.FlxRuntimeShader;
 
 class BlurFilter {
 	/**

@@ -1,7 +1,5 @@
 package objects.state.relaxState.windows;
 
-import flixel.group.FlxSpriteGroup;
-import shapeEx.Rect;
 import substates.RelaxSubState;
 
 class OptionWindow extends FlxSpriteGroup

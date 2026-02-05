@@ -1,8 +1,9 @@
 package shaders;
 
-import flixel.addons.display.FlxRuntimeShader;
 import lime.graphics.opengl.GLProgram;
 import lime.app.Application;
+
+import flixel.addons.display.FlxRuntimeShader;
 
 class ErrorHandledShader extends FlxShader implements IErrorHandler
 {

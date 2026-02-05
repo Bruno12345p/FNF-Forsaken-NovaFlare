@@ -1,10 +1,12 @@
 ﻿package backend;
 
-import game.funkin.backend.ExtraKeysHandler.EKNoteColor;
-import flixel.util.FlxSave;
 import openfl.utils.Assets;
+
+import flixel.util.FlxSave;
 import flixel.FlxBasic;
 import flixel.FlxObject;
+
+import game.funkin.backend.ExtraKeysHandler.EKNoteColor;
 
 #if cpp
 @:cppFileCode('#include <thread>')

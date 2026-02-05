@@ -2,7 +2,6 @@
 
 import haxe.ds.List;
 import haxe.ds.Vector;
-import sys.io.FileInput;
 
 /**
  * 解析lang文件并把结果输入到`LangState`中

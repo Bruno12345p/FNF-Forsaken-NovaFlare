@@ -10,8 +10,6 @@ package developer.display;
 	thanks Chiny help me adjust data
 	github: https://github.com/dmmchh
  */
-import flixel.tweens.FlxTween;
-import flixel.tweens.FlxEase;
 
 import openfl.events.Event;
 

@@ -1,8 +1,7 @@
 package crowplexus.hscript.proxy.flixel.util;
 
 import flixel.system.macros.FlxMacroUtil;
-import flixel.math.FlxMath;
-import flixel.util.FlxColor;
+
 import crowplexus.hscript.ISharedScript;
 
 /**

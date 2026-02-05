@@ -1,10 +1,11 @@
 package states.backend;
 
+import lime.app.Application;
+
+import openfl.Lib;
+
 import flixel.FlxSubState;
 import flixel.effects.FlxFlicker;
-import lime.app.Application;
-import flixel.addons.transition.FlxTransitionableState;
-import openfl.Lib;
 
 class PirateState extends MusicBeatState
 {

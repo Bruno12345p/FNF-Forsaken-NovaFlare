@@ -1,12 +1,11 @@
 ﻿package editors;
 
-import game.funkin.objects.Note;
-import game.funkin.objects.StrumNote;
-import game.funkin.objects.NoteSplash;
 import flixel.addons.ui.FlxInputText;
 import flixel.addons.ui.FlxUINumericStepper;
 
-using StringTools;
+import game.funkin.objects.Note;
+import game.funkin.objects.StrumNote;
+import game.funkin.objects.NoteSplash;
 
 class NoteSplashDebugState extends MusicBeatState
 {

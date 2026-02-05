@@ -1,7 +1,7 @@
 ﻿package game.funkin.backend.diffCalc;
 
 import openfl.system.System;
-import flixel.math.FlxMath;
+
 import game.funkin.backend.Song;
 
 class SmallNote // basically Note.hx but small as fuck

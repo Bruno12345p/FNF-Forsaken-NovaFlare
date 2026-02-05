@@ -1,7 +1,5 @@
 package objects.state.relaxState;
 
-import flixel.text.FlxText;
-
 class BackButtons extends FlxSpriteGroup
 {
     public var backButtons:FlxSprite;

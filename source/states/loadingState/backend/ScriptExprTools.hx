@@ -1,10 +1,11 @@
 ﻿package states.loadingState.backend;
 
+import crowplexus.hscript.Expr;
+import crowplexus.hscript.Tools;
+
 import luahscript.exprs.LuaExpr;
 import luahscript.LuaTools;
 import luahscript.exprs.LuaConst;
-import crowplexus.hscript.Expr;
-import crowplexus.hscript.Tools;
 
 class ScriptExprTools {
 	public static function hx_getValue(e:Expr):Dynamic {

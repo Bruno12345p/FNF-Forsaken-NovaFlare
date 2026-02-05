@@ -4,10 +4,13 @@ import flixel.input.keyboard.FlxKey;
 import flixel.input.gamepad.FlxGamepad;
 import flixel.input.gamepad.FlxGamepadInputID;
 import flixel.input.gamepad.FlxGamepadManager;
+
+import backend.InputFormatter;
+
 import objects.CheckboxThingie;
 import objects.AttachedText;
+
 import options.base.OptionBase;
-import backend.InputFormatter;
 
 class BaseOptionsMenu extends MusicBeatSubstate
 {

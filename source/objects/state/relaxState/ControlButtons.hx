@@ -1,12 +1,6 @@
 package objects.state.relaxState;
 
-import flixel.FlxSprite;
-import flixel.tweens.FlxTween;
-import flixel.util.FlxColor;
-import flixel.math.FlxPoint;
-import flixel.math.FlxMath;
 import flixel.util.FlxSpriteUtil;
-import flixel.FlxG;
 
 class ControlButtons
 {

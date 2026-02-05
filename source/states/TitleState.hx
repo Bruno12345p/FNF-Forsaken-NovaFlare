@@ -1,27 +1,25 @@
 ﻿package states;
 
-import game.funkin.backend.ExtraKeysHandler;
-import game.funkin.backend.WeekData;
-import game.funkin.backend.Highscore;
+import haxe.Json;
+
+import openfl.display.Bitmap;
+import openfl.display.BitmapData;
 
 import flixel.input.keyboard.FlxKey;
-import flixel.addons.transition.FlxTransitionableState;
 import flixel.graphics.frames.FlxAtlasFrames;
 import flixel.graphics.frames.FlxFrame;
 import flixel.group.FlxGroup;
 import flixel.input.gamepad.FlxGamepad;
-import haxe.Json;
-
-import openfl.Assets;
-import openfl.display.Bitmap;
-import openfl.display.BitmapData;
 
 import shaders.ColorSwap;
 
 import states.StoryMenuState;
-import states.OutdatedState;
 import states.MainMenuState;
 import states.backend.FlashingState;
+import states.backend.OutdatedState;
+
+import game.funkin.backend.WeekData;
+import game.funkin.backend.Highscore;
 
 typedef TitleData =
 {

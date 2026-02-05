@@ -1,6 +1,7 @@
 package options.objects;
 
 import openfl.filters.GlowFilter;
+
 import flixel.graphics.frames.FlxFilterFrames;
 
 enum OptionType
