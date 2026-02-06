@@ -4,21 +4,21 @@
       "name": "lime",
       "type": "git",
       "dir": null,
-      "ref": "main",
-      "url": "https://github.com/NovaFlare-Engine-haxelib/lime-8.3.0"
+      "ref": "develop",
+      "url": "https://github.com/NovaFlare-Engine-haxelib/lime"
     },
     {
       "name": "openfl",
       "type": "git",
       "dir": null,
       "ref": "main",
-      "url": "https://github.com/NovaFlare-Engine-haxelib/openfl-9.5.0"
+      "url": "https://github.com/NovaFlare-Engine-haxelib/openfl"
     },
     {
       "name": "flixel",
       "type": "git",
       "dir": null,
-      "ref": "main",
+      "ref": "dev",
       "url": "https://github.com/NovaFlare-Engine-haxelib/flixel"
     },
     {
@@ -27,28 +27,26 @@
       "version": "3.3.2"
     },
     {
-      "name": "haxeui-core",
-      "type": "haxelib",
-      "version": "1.7.0"
-    },
-    {
-      "name": "haxeui-flixel",
-      "type": "git",
-      "dir": null,
-      "ref": "main",
-      "url": "https://github.com/NovaFlare-Engine-haxelib/haxeui-flixel.git"
-    },
-    {
       "name": "flixel-ui",
       "type": "git",
       "dir": null,
-      "ref": "main",
+      "ref": "dev",
       "url": "https://github.com/NovaFlare-Engine-haxelib/flixel-ui"
     },
     {
       "name": "flixel-tools",
       "type": "haxelib",
       "version": "1.5.1"
+    },
+    {
+      "name": "haxeui-core",
+      "type": "haxelib",
+      "version": "1.7.0"
+    },
+    {
+      "name": "haxeui-flixel",
+      "type": "haxelib",
+      "version": "1.7.0"
     },
     {
       "name": "crypto",
@@ -71,22 +69,22 @@
       "name": "hxcpp",
       "type": "git",
       "dir": null,
-      "ref": "main",
-      "url": "https://github.com/NovaFlare-Engine-haxelib/hxcpp-4.3.2-new"
+      "ref": "master",
+      "url": "https://github.com/NovaFlare-Engine-haxelib/hxcpp"
     },
     {
       "name": "hxvlc",
       "type": "git",
       "dir": null,
       "ref": "main",
-      "url": "https://github.com/NovaFlare-Engine-haxelib/hxvlc-2.2.4"
+      "url": "https://github.com/beihu235/hxvlc-1.8.1"
     },
     {
       "name": "hscript-iris-improved",
       "type": "git",
       "dir": null,
       "ref": "master",
-      "url": "https://github.com/NovaFlare-Engine-Concentration/hscript-iris-improved"
+      "url": "https://github.com/beihu235/hscript-iris-improved"
     },
     {
       "name": "flxsoundfilters",
@@ -123,20 +121,6 @@
       "url": "https://github.com/NovaFlare-Engine-haxelib/linc_luajit"
     },
     {
-      "name": "luahscript",
-      "type": "git",
-      "dir": null,
-      "ref": "master",
-      "url": "https://github.com/VapireMox/luahscript"
-    },
-    {
-      "name": "spine-haxe",
-      "type": "git",
-      "dir": "spine-haxe",
-      "ref": "cd726af62b8cbf12ba47c6c0f68d8e04451cf162",
-      "url": "https://github.com/EsotericSoftware/spine-runtimes/"
-    },
-    {
       "name": "flxanimate",
       "type": "git",
       "dir": null,
@@ -148,7 +132,7 @@
       "type": "git",
       "dir": null,
       "ref": "main",
-      "url": "https://github.com/NovaFlare-Engine-haxelib/extension-androidtools-2.1.1"
+      "url": "https://github.com/NovaFlare-Engine-haxelib/extension-androidtools"
     },
     {
       "name": "funkin.vis",
