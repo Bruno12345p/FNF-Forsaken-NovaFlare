@@ -25,7 +25,7 @@ jobs:
         run: |
           haxelib setup ~/haxelib
           haxelib install hmm --quite
-          haxelib run hmm install --quite
+          haxelib run hmm install
           
       - name: Extract current version
         id: get_version
