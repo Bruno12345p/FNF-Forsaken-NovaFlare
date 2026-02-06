@@ -1,12 +1,9 @@
 package substates;
 
-import flixel.addons.transition.FlxTransitionableState;
 import flixel.FlxSubState;
-import flixel.text.FlxText;
+
 import states.freeplayState.FreeplayState;
 import states.MainMenuState;
-
-using StringTools;
 
 class ErrorSubState extends MusicBeatSubstate
 {

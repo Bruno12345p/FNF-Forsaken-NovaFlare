@@ -1,17 +1,13 @@
 ﻿package game.funkin.cutscenes;
 
-import flixel.addons.text.FlxTypeText;
-#if sys
-import sys.FileSystem;
-import sys.io.File;
-#end
-import tjson.TJSON as Json;
 import openfl.utils.Assets;
-#if sys
-import sys.FileSystem;
-import sys.io.File;
-#end
+
+import tjson.TJSON as Json;
+
+import flixel.addons.text.FlxTypeText;
+
 import objects.TypedAlphabet;
+
 import game.funkin.cutscenes.DialogueCharacter;
 
 typedef DialogueFile =

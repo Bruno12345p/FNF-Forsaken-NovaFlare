@@ -1,12 +1,7 @@
 package objects.state.relaxState.windows;
 
-import flixel.group.FlxSpriteGroup;
-import flixel.text.FlxText;
-import flixel.util.FlxColor;
 import flixel.math.FlxRect;
-import flixel.math.FlxMath;
 import flixel.util.FlxSpriteUtil;
-import flixel.FlxG;
 
 class ListButtons extends FlxSpriteGroup
 {

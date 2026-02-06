@@ -1,16 +1,19 @@
 ﻿package states;
 
+import openfl.utils.Assets;
+
+import flixel.group.FlxGroup;
+import flixel.graphics.FlxGraphic;
+
+import objects.MenuItem;
+import objects.MenuCharacter;
+
+import substates.GameplayChangersSubstate;
+import substates.ResetScoreSubState;
+
 import game.funkin.backend.WeekData;
 import game.funkin.backend.Highscore;
 import game.funkin.backend.Song;
-import flixel.group.FlxGroup;
-import flixel.graphics.FlxGraphic;
-import flixel.addons.transition.FlxTransitionableState;
-import openfl.utils.Assets;
-import objects.MenuItem;
-import objects.MenuCharacter;
-import substates.GameplayChangersSubstate;
-import substates.ResetScoreSubState;
 
 class StoryMenuState extends MusicBeatState
 {

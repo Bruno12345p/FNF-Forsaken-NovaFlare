@@ -1,7 +1,6 @@
 ﻿package states.backend;
 
 import game.funkin.objects.StrumNote;
-import game.funkin.backend.ExtraKeysHandler;
 
 class ScaleSimulationState extends MusicBeatState {
     public var infoText:FlxText;

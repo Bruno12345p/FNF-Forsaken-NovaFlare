@@ -1,9 +1,5 @@
 package objects.state.relaxState;
 
-import flixel.text.FlxText;
-import flixel.tweens.FlxTween;
-import flixel.util.FlxColor;
-import flixel.FlxG;
 import flixel.util.FlxStringUtil;
 
 class SongInfoDisplay

@@ -1,9 +1,12 @@
 ﻿package game.funkin.backend;
 
-import openfl.utils.Assets;
 import haxe.Json;
-import game.funkin.backend.Song;
+
+import openfl.utils.Assets;
+
 import scripts.lua.ModchartSprite;
+
+import game.funkin.backend.Song;
 
 typedef StageFile =
 {

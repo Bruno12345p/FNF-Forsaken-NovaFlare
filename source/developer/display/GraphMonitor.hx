@@ -27,6 +27,7 @@ package developer.display;
        monitor.marginGraphBottom = 60; // Increase bottom space
 */
 
+import openfl.Lib;
 import openfl.display.Sprite;
 import openfl.display.Shape;
 import openfl.display.Bitmap;
@@ -39,17 +40,11 @@ import openfl.text.TextFormatAlign;
 import openfl.display.Graphics;
 import openfl.utils.Assets;
 import openfl.events.Event;
-import openfl.Lib;
-import flixel.FlxG;
-import flixel.util.FlxColor;
-import flixel.tweens.FlxTween;
-import flixel.tweens.FlxEase;
-
-// import openfl.display.Bitmap; // Removed
-// import openfl.display.BitmapData; // Removed
 import openfl.geom.Matrix;
 import openfl.geom.Rectangle;
 import openfl.geom.Point;
+// import openfl.display.Bitmap; // Removed
+// import openfl.display.BitmapData; // Removed
 
 typedef MonitorItem = {
     var name:String;

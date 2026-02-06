@@ -2,6 +2,7 @@ package substates;
 
 import objects.AttachedSprite;
 import objects.state.CreditsShape;
+
 #if hxvlc
 import hxvlc.flixel.FlxVideoSprite;
 #end

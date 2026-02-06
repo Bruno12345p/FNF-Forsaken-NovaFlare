@@ -1,6 +1,7 @@
 ﻿package shaders;
 
 import flixel.system.FlxAssets.FlxShader;
+
 import game.funkin.objects.Note;
 
 class RGBPalette

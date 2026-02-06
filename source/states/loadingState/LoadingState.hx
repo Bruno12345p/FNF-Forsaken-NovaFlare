@@ -2,39 +2,37 @@
 
 import haxe.Json;
 
+import sys.thread.Mutex;
+
 import lime.utils.Assets;
+import lime.system.ThreadPool;
+import lime.system.WorkOutput;
 
 import openfl.utils.AssetType;
 import openfl.utils.Assets as OpenFlAssets;
 import openfl.display.BitmapData;
 import openfl.display.Shape;
 
-import flixel.addons.transition.FlxTransitionableState;
+import luahscript.exprs.LuaExpr;
+import luahscript.LuaParser;
+
+import crowplexus.hscript.Expr;
+import crowplexus.hscript.Tools;
+import crowplexus.hscript.Parser;
+
 import flixel.graphics.FlxGraphic;
 import flixel.graphics.frames.FlxFilterFrames;
 
+import backend.thread.ThreadEvent;
+import backend.state.loadingState.*;
+
 import states.freeplayState.FreeplayState;
+import states.loadingState.backend.AsyncTextureUploader;
+import states.loadingState.backend.ScriptExprTools;
 
 import game.funkin.backend.Song;
 import game.funkin.backend.StageData;
 import game.funkin.backend.Rating;
-import backend.state.loadingState.*;
-import states.loadingState.backend.AsyncTextureUploader;
-
-import sys.thread.Mutex;
-
-import lime.system.ThreadPool;
-import lime.system.WorkOutput;
-
-import backend.thread.ThreadEvent;
-
-import luahscript.exprs.LuaExpr;
-import luahscript.LuaParser;
-import crowplexus.hscript.Expr;
-import crowplexus.hscript.Tools;
-import crowplexus.hscript.Parser;
-import states.loadingState.backend.ScriptExprTools;
-
 import game.funkin.cutscenes.DialogueBoxPsych;
 
 class LoadingState extends MusicBeatState

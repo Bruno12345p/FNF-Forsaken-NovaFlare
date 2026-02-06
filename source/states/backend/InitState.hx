@@ -1,43 +1,43 @@
 ﻿package states.backend;
 
-import game.funkin.backend.WeekData;
-import game.funkin.backend.Highscore;
+import sys.thread.Thread;
 
-import flixel.addons.transition.FlxTransitionableState;
-import flixel.input.gamepad.FlxGamepad;
+import lime.app.Application;
+import lime.system.System as LimeSystem;
+import lime.graphics.opengl.GL;
+import lime.graphics.Image;
 
-import openfl.Assets;
 import openfl.display.Bitmap;
 import openfl.display.BitmapData;
 import openfl.events.KeyboardEvent;
 
-import shaders.ColorblindFilter;
+import flixel.input.gamepad.FlxGamepad;
+
 import states.StoryMenuState;
 import states.backend.OutdatedState;
 import states.MainMenuState;
 import states.freeplayState.FreeplayState;
 import states.TitleState;
-#if mobile
-import mobile.states.CopyState;
-#end
-import lime.app.Application;
-import lime.system.System as LimeSystem;
-import lime.graphics.opengl.GL;
-import lime.graphics.Image;
-#if hxvlc
-import hxvlc.flixel.FlxVideoSprite;
-#end
-#if android
-import backend.device.AppData;
-import states.backend.PirateState;
-import sys.io.File;
-#end
 
 import scripts.init.InitScriptData;
 
-import sys.thread.Thread;
+import shaders.ColorblindFilter;
 
-import lime.graphics.opengl.GL;
+import game.funkin.backend.WeekData;
+import game.funkin.backend.Highscore;
+
+#if mobile
+import mobile.states.CopyState;
+#end
+
+#if hxvlc
+import hxvlc.flixel.FlxVideoSprite;
+#end
+
+#if android
+import backend.device.AppData;
+import states.backend.PirateState;
+#end
 
 class InitState extends MusicBeatState
 {

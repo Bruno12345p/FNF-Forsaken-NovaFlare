@@ -1,12 +1,13 @@
 package shaders;
 
-import options.OptionsHelpers;
 import openfl.filters.ColorMatrixFilter;
 import openfl.filters.BitmapFilter;
-import flixel.FlxG;
-import flixel.graphics.tile.FlxGraphicsShader;
 import openfl.filters.ShaderFilter;
+
+import flixel.graphics.tile.FlxGraphicsShader;
 import flixel.system.FlxAssets.FlxShader;
+
+import options.OptionsHelpers;
 
 class ColorblindFilter
 {

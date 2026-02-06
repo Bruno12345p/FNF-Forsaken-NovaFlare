@@ -1,9 +1,9 @@
 package mobile.objects;
 
 import haxe.ds.Map;
-import flixel.math.FlxPoint;
-import mobile.flixel.input.FlxMobileInputManager;
 import haxe.extern.EitherType;
+
+import mobile.flixel.input.FlxMobileInputManager;
 import mobile.flixel.FlxButton;
 
 class MobileControls extends FlxTypedSpriteGroup<FlxMobileInputManager>

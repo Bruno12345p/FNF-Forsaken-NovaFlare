@@ -1,9 +1,9 @@
 package objects.state;
 
-import openfl.display.BitmapData;
-import flixel.graphics.FlxGraphic;
 import openfl.display.Shape;
-import shapeEx.*;
+import openfl.display.BitmapData;
+
+import flixel.graphics.FlxGraphic;
 
 class ModsButtonRect extends FlxSpriteGroup // play/back button
 {

@@ -1,38 +1,44 @@
 ﻿#if LUA_ALLOWED
 package scripts.lua;
 
-import game.funkin.backend.WeekData;
-import game.funkin.backend.Highscore;
-import game.funkin.backend.Song;
+import haxe.Json;
+
 import openfl.Lib;
 import openfl.utils.Assets;
-import flixel.FlxBasic;
-import flixel.FlxObject;
-import flixel.addons.transition.FlxTransitionableState;
+
 #if (!flash && sys)
 import flixel.addons.display.FlxRuntimeShader;
 #end
+import flixel.FlxBasic;
+import flixel.FlxObject;
+import flixel.input.keyboard.FlxKey;
+import flixel.input.gamepad.FlxGamepadInputID;
+import flixel.math.FlxMatrix;
+
+import states.MainMenuState;
+import states.StoryMenuState;
+import states.freeplayState.FreeplayState;
+
+import substates.PauseSubState;
+import substates.GameOverSubstate;
+
+#if HSCRIPT_ALLOWED
+import scripts.hscript.HScriptBase;
+#end
+
+import scripts.lua.LuaUtils;
+import scripts.lua.LuaUtils.LuaTweenOptions;
+import scripts.lua.DebugLuaText;
+import scripts.lua.ModchartSprite;
+
+import game.funkin.backend.WeekData;
+import game.funkin.backend.Highscore;
+import game.funkin.backend.Song;
 import game.funkin.cutscenes.DialogueBoxPsych;
 import game.funkin.objects.StrumNote;
 import game.funkin.objects.Note;
 import game.funkin.objects.NoteSplash;
 import game.funkin.objects.Character;
-import states.MainMenuState;
-import states.StoryMenuState;
-import states.freeplayState.FreeplayState;
-import substates.PauseSubState;
-import substates.GameOverSubstate;
-import scripts.lua.LuaUtils;
-import scripts.lua.LuaUtils.LuaTweenOptions;
-#if HSCRIPT_ALLOWED
-import scripts.hscript.HScriptBase;
-#end
-import scripts.lua.DebugLuaText;
-import scripts.lua.ModchartSprite;
-import flixel.input.keyboard.FlxKey;
-import flixel.input.gamepad.FlxGamepadInputID;
-import flixel.math.FlxMatrix;
-import haxe.Json;
 
 class FunkinLua
 {

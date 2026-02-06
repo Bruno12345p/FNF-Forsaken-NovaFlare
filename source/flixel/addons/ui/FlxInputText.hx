@@ -1,12 +1,13 @@
 package flixel.addons.ui;
 
 import lime.system.Clipboard;
+
 import openfl.errors.Error;
 import openfl.events.KeyboardEvent;
 import openfl.geom.Rectangle;
+
 import flixel.addons.ui.FlxUI.NamedString;
 import flixel.math.FlxRect;
-import flixel.util.FlxDestroyUtil;
 
 /**
  * FlxInputText v1.11, ported to Haxe

@@ -1,14 +1,11 @@
 package objects.state.relaxState.windows;
 
-import flixel.group.FlxSpriteGroup;
-import flixel.tweens.FlxTween;
-import flixel.tweens.FlxEase;
 import flixel.util.FlxSpriteUtil;
 import flixel.math.FlxRect;
-import backend.relax.GetInit;
-import objects.state.relaxState.windows.ListButtons;
 
-import shapeEx.Rect;
+import backend.relax.GetInit;
+
+import objects.state.relaxState.windows.ListButtons;
 
 import substates.RelaxSubState;
 

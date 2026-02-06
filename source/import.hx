@@ -1,36 +1,4 @@
 ﻿#if !macro
-// Discord API
-#if DISCORD_ALLOWED
-import backend.Discord;
-#end
-
-// Psych
-#if ACHIEVEMENTS_ALLOWED
-import backend.Achievements;
-#end
-
-#if hxvlc
-import objects.VideoSprite;
-#end
-
-// Android
-#if android
-import android.content.Context as AndroidContext;
-import android.widget.Toast as AndroidToast;
-import android.os.Environment as AndroidEnvironment;
-import android.Permissions as AndroidPermissions;
-import android.Settings as AndroidSettings;
-import android.Tools as AndroidTools;
-#end
-
-// Mobile Controls
-import mobile.objects.MobileControls;
-import mobile.flixel.FlxHitbox;
-import mobile.flixel.FlxVirtualPad;
-import mobile.flixel.input.FlxMobileInputID;
-import mobile.backend.Data;
-import mobile.backend.SUtil;
-
 #if sys
 import sys.*;
 import sys.io.*;
@@ -38,52 +6,23 @@ import sys.io.*;
 import js.html.*;
 #end
 
-import backend.language.Language;
-
-import backend.Paths;
-import backend.Cache;
-import backend.Controls;
-import backend.CoolUtil;
-import backend.MusicBeatState;
-import backend.MusicBeatSubstate;
-import backend.CustomFadeTransition;
-import backend.ClientPrefs;
-import backend.Conductor;
-import game.funkin.stages.base.BaseStage;
-import game.funkin.backend.Difficulty;
-import backend.Mods;
-import backend.ui.*; // Psych-UI
-import backend.data.*;
-import backend.mouse.*;
-import backend.gc.*;
-import game.funkin.backend.ExtraKeysHandler;
-
-import objects.Alphabet;
-import objects.BGSprite;
-import objects.AudioDisplay;
-
-import developer.display.mouseEvent.*;
 import developer.display.*;
+import developer.display.mouseEvent.*;
 
-import shapeEx.*;
-import objects.state.general.*;
+//Spine
+import openfl.Assets;
 
-import game.funkin.PlayState;
-import states.loadingState.LoadingState;
+import spine.animation.AnimationStateData;
+import spine.animation.AnimationState;
+import spine.atlas.TextureAtlas;
+import spine.SkeletonData;
+import spine.flixel.SkeletonSprite;
+import spine.flixel.FlixelTextureLoader;
 
 #if flxanimate
 import flxanimate.*;
 import flxanimate.PsychFlxAnimate as FlxAnimate;
 #end
-
-//Spine
-import spine.animation.AnimationStateData;
-import spine.animation.AnimationState;
-import openfl.Assets;
-import spine.atlas.TextureAtlas;
-import spine.SkeletonData;
-import spine.flixel.SkeletonSprite;
-import spine.flixel.FlixelTextureLoader;
 
 // Flixel
 import flixel.sound.FlxSound;
@@ -102,7 +41,70 @@ import flixel.tweens.FlxTween;
 import flixel.group.FlxSpriteGroup;
 import flixel.group.FlxGroup.FlxTypedGroup;
 import flixel.addons.transition.FlxTransitionableState;
+
+// Mobile Controls
+import mobile.objects.MobileControls;
+import mobile.flixel.FlxHitbox;
+import mobile.flixel.FlxVirtualPad;
+import mobile.flixel.input.FlxMobileInputID;
+import mobile.backend.Data;
+import mobile.backend.SUtil;
+
+// Android
+#if android
+import android.content.Context as AndroidContext;
+import android.widget.Toast as AndroidToast;
+import android.os.Environment as AndroidEnvironment;
+import android.Permissions as AndroidPermissions;
+import android.Settings as AndroidSettings;
+import android.Tools as AndroidTools;
+#end
+
+// Discord API
+#if DISCORD_ALLOWED
+import backend.Discord;
+#end
+
+// Psych
+#if ACHIEVEMENTS_ALLOWED
+import backend.Achievements;
+#end
+
+import backend.language.Language;
+import backend.Paths;
+import backend.Cache;
+import backend.Controls;
+import backend.CoolUtil;
+import backend.MusicBeatState;
+import backend.MusicBeatSubstate;
+import backend.CustomFadeTransition;
+import backend.ClientPrefs;
+import backend.Conductor;
+import backend.Mods;
+import backend.ui.*; // Psych-UI
+import backend.data.*;
+import backend.mouse.*;
+import backend.gc.*;
+
+#if hxvlc
+import objects.VideoSprite;
+#end
+
+import shapeEx.*;
+
+import objects.Alphabet;
+import objects.BGSprite;
+import objects.AudioDisplay;
+import objects.state.general.*;
+
 import shaders.flixel.system.FlxShader;
+
+import states.loadingState.LoadingState;
+
+import game.funkin.PlayState;
+import game.funkin.stages.base.BaseStage;
+import game.funkin.backend.Difficulty;
+import game.funkin.backend.ExtraKeysHandler;
 
 using StringTools;
 #end

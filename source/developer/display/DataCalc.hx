@@ -1,7 +1,5 @@
 package developer.display;
 
-using StringTools;
-
 class DataCalc
 {
 	static public var updateFPS:Float = 0;

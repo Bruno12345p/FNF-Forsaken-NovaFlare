@@ -1,14 +1,16 @@
 package states.freeplayState.backend;
 
+import Lambda;
+
 import sys.thread.Thread;
 import sys.thread.FixedThreadPool;
 import sys.thread.Mutex;
-import backend.thread.ThreadEvent;
 
-import Lambda;
 import openfl.display.BitmapData;
 import openfl.geom.ColorTransform;
 import openfl.geom.Rectangle;
+
+import backend.thread.ThreadEvent;
 
 typedef DataPrepare = {
     modPath:String,

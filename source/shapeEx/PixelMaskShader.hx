@@ -1,7 +1,8 @@
 package shapeEx;
 
-import flixel.system.FlxAssets.FlxShader;
 import openfl.display.BitmapData;
+
+import flixel.system.FlxAssets.FlxShader;
 
 class PixelMaskShader extends FlxShader
 {

@@ -1,19 +1,20 @@
 ﻿package options.base;
 
-import game.funkin.backend.ExtraKeysHandler;
+import lime.system.Clipboard;
+
 import flixel.addons.display.FlxBackdrop;
 import flixel.addons.display.FlxGridOverlay;
 import flixel.addons.display.shapes.FlxShapeCircle;
 import flixel.input.keyboard.FlxKey;
 import flixel.input.gamepad.FlxGamepadInputID;
-import lime.system.Clipboard;
 import flixel.util.FlxGradient;
 import flixel.addons.ui.FlxUIInputText;
-import game.funkin.objects.StrumNote;
-import game.funkin.objects.Note;
-import flixel.addons.transition.FlxTransitionableState;
+
 import shaders.RGBPalette;
 import shaders.RGBPalette.RGBShaderReference;
+
+import game.funkin.objects.StrumNote;
+import game.funkin.objects.Note;
 
 class NotesSubState extends MusicBeatSubstate
 {

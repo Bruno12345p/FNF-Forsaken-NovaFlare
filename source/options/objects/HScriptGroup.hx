@@ -1,6 +1,7 @@
 package options.objects;
 
 import scripts.hscript.HScript;
+
 import options.objects.Option;
 
 class HScriptGroup extends OptionCata {

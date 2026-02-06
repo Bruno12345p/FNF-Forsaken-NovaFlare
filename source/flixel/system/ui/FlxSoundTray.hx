@@ -1,9 +1,11 @@
 package flixel.system.ui;
 
 #if FLX_SOUND_SYSTEM
-import flixel.FlxG;
-import flixel.system.FlxAssets;
-import flixel.util.FlxColor;
+#if flash
+import openfl.text.AntiAliasType;
+import openfl.text.GridFitType;
+#end
+
 import openfl.Lib;
 import openfl.display.Bitmap;
 import openfl.display.BitmapData;
@@ -11,10 +13,8 @@ import openfl.display.Sprite;
 import openfl.text.TextField;
 import openfl.text.TextFormat;
 import openfl.text.TextFormatAlign;
-#if flash
-import openfl.text.AntiAliasType;
-import openfl.text.GridFitType;
-#end
+
+import flixel.system.FlxAssets;
 
 /**
  * The flixel sound tray, the little volume meter that pops down sometimes.

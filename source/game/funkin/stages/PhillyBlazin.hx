@@ -1,10 +1,13 @@
 ﻿package game.funkin.stages;
 
 import openfl.filters.ShaderFilter;
-import shaders.RainShader;
-import flixel.addons.transition.FlxTransitionableState;
+
 import flixel.addons.display.FlxTiledSprite;
+
+import shaders.RainShader;
+
 import substates.GameOverSubstate;
+
 import game.funkin.stages.objects.*;
 import game.funkin.objects.Note;
 

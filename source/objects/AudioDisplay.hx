@@ -1,10 +1,7 @@
 package objects;
 
-import flixel.sound.FlxSound;
 import funkin.vis.dsp.SpectralAnalyzer;
 import funkin.vis.dsp.SpectralAnalyzer.Bar;
-
-import shapeEx.Rect;
 
 class AudioDisplay extends FlxSpriteGroup
 {

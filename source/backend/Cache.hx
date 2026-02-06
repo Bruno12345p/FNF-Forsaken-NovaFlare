@@ -1,11 +1,11 @@
 package backend;
 
+import openfl.media.Sound;
+
 import flixel.graphics.frames.FlxFramesCollection;
 import flixel.graphics.frames.FlxFrame;
 import flixel.graphics.FlxGraphic;
 import flixel.animation.FlxAnimationController;
-
-import openfl.media.Sound;
 
 class Cache {
     // define the locally tracked assets

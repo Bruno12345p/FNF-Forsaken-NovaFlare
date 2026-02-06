@@ -1,9 +1,11 @@
 package backend;
 
 #if ACHIEVEMENTS_ALLOWED
-import objects.AchievementPopup;
 import haxe.Exception;
 import haxe.Json;
+
+import objects.AchievementPopup;
+
 #if LUA_ALLOWED
 import scripts.lua.FunkinLua;
 #end

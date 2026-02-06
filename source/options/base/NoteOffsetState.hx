@@ -1,9 +1,10 @@
 ﻿package options.base;
 
+import flixel.addons.display.shapes.FlxShapeCircle;
+
 import game.funkin.backend.StageData;
 import game.funkin.objects.Character;
 import game.funkin.objects.Bar;
-import flixel.addons.display.shapes.FlxShapeCircle;
 import game.funkin.objects.KeyboardViewer;
 import game.funkin.stages.StageWeek1 as BackgroundStage;
 

@@ -3,7 +3,6 @@ package backend.device;
 import lime.app.Application;
 import lime.system.Display;
 import lime.system.System;
-import flixel.util.FlxColor;
 
 #if (cpp && windows)
 @:buildXml('

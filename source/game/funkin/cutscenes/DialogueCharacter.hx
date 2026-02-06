@@ -1,6 +1,7 @@
 ﻿package game.funkin.cutscenes;
 
 import haxe.Json;
+
 import openfl.utils.Assets;
 
 typedef DialogueAnimArray =

@@ -1,11 +1,6 @@
 package objects.state.relaxState.backend;
 
-import flixel.FlxG;
-import flixel.FlxSprite;
-import flixel.group.FlxGroup.FlxTypedGroup;
-import flixel.util.FlxColor;
 import flixel.util.FlxSpriteUtil;
-import flixel.math.FlxPoint;
 
 class HollowTriangleEmitter extends FlxTypedGroup<FlxSprite>
 {

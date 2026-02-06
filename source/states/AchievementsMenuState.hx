@@ -2,8 +2,8 @@
 
 import flixel.FlxObject;
 import flixel.util.FlxSort;
+
 import game.funkin.objects.Bar;
-import flixel.addons.transition.FlxTransitionableState;
 
 #if ACHIEVEMENTS_ALLOWED
 class AchievementsMenuState extends MusicBeatState

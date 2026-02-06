@@ -1,10 +1,13 @@
 ﻿package scripts.lua;
 
+import Type.ValueType;
+
+import openfl.display.BlendMode;
+
+import substates.GameOverSubstate;
+
 import game.funkin.backend.WeekData;
 import game.funkin.objects.Character;
-import openfl.display.BlendMode;
-import Type.ValueType;
-import substates.GameOverSubstate;
 
 typedef LuaTweenOptions =
 {

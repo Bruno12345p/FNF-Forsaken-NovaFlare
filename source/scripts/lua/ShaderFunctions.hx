@@ -2,8 +2,10 @@ package scripts.lua;
 
 #if (!flash && sys)
 import openfl.filters.ShaderFilter;
+
 import flixel.addons.display.FlxRuntimeShader;
 #end
+
 #if CUSTOM_SHADERS_ALLOWED
 import shaders.CustomShaders;
 #end

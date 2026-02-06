@@ -1,8 +1,10 @@
 package backend;
 
-import flixel.FlxSubState;
-import shaders.ColorblindFilter;
 import openfl.Lib;
+
+import flixel.FlxSubState;
+
+import shaders.ColorblindFilter;
 
 class MusicBeatSubstate extends FlxSubState
 {

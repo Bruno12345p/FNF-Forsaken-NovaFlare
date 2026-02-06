@@ -1,11 +1,12 @@
 package backend;
 
-import flixel.addons.transition.FlxTransitionableState;
-import flixel.FlxState;
-import flixel.addons.ui.FlxUIState;
-import backend.PsychCamera;
-import shaders.ColorblindFilter;
 import openfl.Lib;
+
+import flixel.addons.ui.FlxUIState;
+
+import backend.PsychCamera;
+
+import shaders.ColorblindFilter;
 
 class MusicBeatState extends FlxUIState
 {

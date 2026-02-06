@@ -1,17 +1,19 @@
 ﻿package substates;
 
-import game.funkin.backend.Difficulty;
-import backend.MusicBeatState;
+import openfl.utils.Assets;
+
+import flixel.util.FlxStringUtil;
+
+import editors.ChartingState;
+
+import states.freeplayState.FreeplayState;
+import states.StoryMenuState;
+
+import options.OptionsState;
+
 import game.funkin.backend.WeekData;
 import game.funkin.backend.Highscore;
 import game.funkin.backend.Song;
-import editors.ChartingState;
-import states.freeplayState.FreeplayState;
-import states.StoryMenuState;
-import options.OptionsState;
-import flixel.util.FlxStringUtil;
-import flixel.addons.transition.FlxTransitionableState;
-import openfl.utils.Assets;
 
 /*
 	PauseSubState made by TieGuo, code optimized by Beihu.

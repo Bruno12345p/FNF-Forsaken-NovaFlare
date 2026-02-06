@@ -4,8 +4,9 @@ package shaders.openfl.filters;
 import openfl.display.BitmapData;
 import openfl.display.BlendMode;
 import openfl.display.DisplayObjectRenderer;
-import shaders.flixel.system.FlxShader;
 import openfl.filters.BitmapFilter;
+
+import shaders.flixel.system.FlxShader;
 
 class ShaderFilter extends BitmapFilter
 {

@@ -1,18 +1,13 @@
 package options.objects.controlsSubState;
 
-import flixel.group.FlxSpriteGroup;
-import flixel.text.FlxText;
-import flixel.util.FlxColor;
 import flixel.math.FlxRect;
-import flixel.math.FlxMath;
 import flixel.util.FlxSpriteUtil;
-import flixel.FlxG;
-
-import backend.InputFormatter;
 import flixel.input.gamepad.FlxGamepad;
 import flixel.input.gamepad.FlxGamepadInputID;
 import flixel.input.gamepad.FlxGamepadManager;
 import flixel.input.keyboard.FlxKey;
+
+import backend.InputFormatter;
 
 class ControlsSprite extends FlxSpriteGroup
 {

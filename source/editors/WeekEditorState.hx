@@ -1,7 +1,15 @@
 ﻿package editors;
 
-import game.funkin.backend.WeekData;
+import haxe.Json;
+
+import lime.system.Clipboard;
+
 import openfl.utils.Assets;
+import openfl.net.FileReference;
+import openfl.events.Event;
+import openfl.events.IOErrorEvent;
+import openfl.net.FileFilter;
+
 import flixel.addons.ui.FlxInputText;
 import flixel.addons.ui.FlxUI9SliceSprite;
 import flixel.addons.ui.FlxUI;
@@ -9,18 +17,15 @@ import flixel.addons.ui.FlxUICheckBox;
 import flixel.addons.ui.FlxUIInputText;
 import flixel.addons.ui.FlxUINumericStepper;
 import flixel.addons.ui.FlxUITabMenu;
-import flixel.addons.transition.FlxTransitionableState;
 import flixel.ui.FlxButton;
-import openfl.net.FileReference;
-import openfl.events.Event;
-import openfl.events.IOErrorEvent;
-import openfl.net.FileFilter;
-import lime.system.Clipboard;
-import haxe.Json;
-import game.funkin.objects.HealthIcon;
+
 import objects.MenuCharacter;
 import objects.MenuItem;
+
 import editors.MasterEditorMenu;
+
+import game.funkin.objects.HealthIcon;
+import game.funkin.backend.WeekData;
 
 class WeekEditorState extends MusicBeatState
 {

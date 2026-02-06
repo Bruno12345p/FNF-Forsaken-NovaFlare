@@ -1,10 +1,13 @@
 ﻿package game.funkin.stages;
 
-import flixel.addons.effects.FlxTrail;
-import game.funkin.stages.objects.*;
-import substates.GameOverSubstate;
-import game.funkin.cutscenes.DialogueBox;
 import openfl.utils.Assets as OpenFlAssets;
+
+import flixel.addons.effects.FlxTrail;
+
+import substates.GameOverSubstate;
+
+import game.funkin.stages.objects.*;
+import game.funkin.cutscenes.DialogueBox;
 
 class SchoolEvil extends BaseStage
 {

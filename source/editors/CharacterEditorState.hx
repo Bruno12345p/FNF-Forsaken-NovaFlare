@@ -1,21 +1,23 @@
 ﻿package editors;
 
-import flixel.FlxObject;
-import flixel.graphics.FlxGraphic;
-import flixel.animation.FlxAnimation;
-import flixel.addons.transition.FlxTransitionableState;
-import flixel.addons.ui.*;
-import flixel.ui.FlxButton;
-import flixel.util.FlxDestroyUtil;
+import lime.system.Clipboard;
+
 import openfl.net.FileReference;
 import openfl.events.Event;
 import openfl.events.IOErrorEvent;
 import openfl.utils.Assets;
-import lime.system.Clipboard;
+
+import flixel.FlxObject;
+import flixel.graphics.FlxGraphic;
+import flixel.animation.FlxAnimation;
+import flixel.addons.ui.*;
+import flixel.ui.FlxButton;
+
+import mobile.flixel.FlxButton as MobileButton;
+
 import game.funkin.objects.Character;
 import game.funkin.objects.HealthIcon;
 import game.funkin.objects.Bar;
-import mobile.flixel.FlxButton as MobileButton;
 
 // flixel 5.7.0+ fix
 #if (FLX_DEBUG || flixel < version("5.7.0"))

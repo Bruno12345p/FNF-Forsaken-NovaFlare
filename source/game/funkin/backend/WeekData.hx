@@ -1,7 +1,8 @@
 ﻿package game.funkin.backend;
 
-import openfl.utils.Assets as OpenFlAssets;
 import haxe.Json;
+
+import openfl.utils.Assets as OpenFlAssets;
 
 typedef WeekFile =
 {

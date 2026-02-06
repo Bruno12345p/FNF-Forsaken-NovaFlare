@@ -1,17 +1,14 @@
 package objects.state.relaxState;
 
-import flixel.FlxSprite;
-import flixel.util.FlxColor;
-import flixel.math.FlxPoint;
+import flash.geom.Point;
+import flash.geom.Matrix;
 
 import openfl.display.BitmapData;
 import openfl.display.BitmapDataChannel;
-import flash.geom.Point;
-import flash.geom.Matrix;
 import openfl.geom.Rectangle;
 import openfl.display.Shape;
-import flixel.util.FlxSpriteUtil;
 
+import flixel.util.FlxSpriteUtil;
 
 class ButtonSprite extends FlxSprite
 {

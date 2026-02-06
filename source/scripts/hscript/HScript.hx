@@ -1,12 +1,16 @@
 ﻿package scripts.hscript;
 
 import flixel.FlxBasic;
-import game.funkin.objects.Character;
-import scripts.lua.LuaUtils;
-import scripts.lua.CustomSubstate;
+
 #if LUA_ALLOWED
 import scripts.lua.FunkinLua;
 #end
+
+import scripts.lua.LuaUtils;
+import scripts.lua.CustomSubstate;
+
+import game.funkin.objects.Character;
+
 #if HSCRIPT_ALLOWED
 import crowplexus.iris.Iris;
 import crowplexus.hscript.Tools;
@@ -15,6 +19,7 @@ import crowplexus.hscript.Parser;
 import crowplexus.hscript.Interp;
 import crowplexus.hscript.Printer;
 import crowplexus.hscript.ISharedScript;
+
 import scripts.stages.modules.ScriptedModuleNotify;
 import scripts.stages.modules.ModuleAgency;
 

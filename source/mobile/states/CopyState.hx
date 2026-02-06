@@ -1,17 +1,21 @@
 package mobile.states;
 
-import flixel.addons.transition.FlxTransitionableState;
-import lime.utils.Assets as LimeAssets;
-import openfl.utils.Assets as OpenflAssets;
-import flixel.addons.util.FlxAsyncLoop;
-import openfl.utils.ByteArray;
-import openfl.system.System;
-import states.TitleState;
-import states.backend.InitState;
 import haxe.io.Path;
+
 #if (target.threaded)
 import sys.thread.Thread;
 #end
+
+import lime.utils.Assets as LimeAssets;
+
+import openfl.utils.Assets as OpenflAssets;
+import openfl.utils.ByteArray;
+import openfl.system.System;
+
+import flixel.addons.util.FlxAsyncLoop;
+
+import states.TitleState;
+import states.backend.InitState;
 
 class CopyState extends MusicBeatState
 {

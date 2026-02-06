@@ -2,10 +2,7 @@ package flixel.tweens;
 
 import flixel.tweens.misc.ShakeTween;
 import flixel.util.FlxAxes;
-import flixel.FlxG;
 import flixel.FlxObject;
-import flixel.FlxSprite;
-import flixel.math.FlxMath;
 import flixel.tweens.FlxEase.EaseFunction;
 import flixel.tweens.misc.AngleTween;
 import flixel.tweens.misc.ColorTween;
@@ -19,9 +16,8 @@ import flixel.tweens.motion.LinearPath;
 import flixel.tweens.motion.QuadMotion;
 import flixel.tweens.motion.QuadPath;
 import flixel.util.FlxArrayUtil;
-import flixel.util.FlxColor;
 import flixel.util.FlxDestroyUtil.IFlxDestroyable;
-import flixel.math.FlxPoint;
+
 #if HSCRIPT_ALLOWED
 import crowplexus.hscript.proxy.ProxyReflect as Reflect;
 #end

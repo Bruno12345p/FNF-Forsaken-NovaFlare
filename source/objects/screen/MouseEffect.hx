@@ -1,5 +1,7 @@
 package objects.screen;
 
+import haxe.Timer;
+
 import openfl.display.Bitmap;
 import openfl.display.BitmapData;
 import openfl.display.Sprite;
@@ -8,9 +10,6 @@ import openfl.events.MouseEvent;
 import openfl.geom.Point;
 import openfl.Lib;
 import openfl.geom.ColorTransform;
-import haxe.Timer;
-
-import developer.display.DataCalc;
 
 class MouseEffect extends Sprite {
     // 点击特效配置

@@ -1,7 +1,9 @@
 ﻿package game.funkin.backend;
 
 import haxe.Json;
+
 import openfl.utils.Assets;
+
 import game.funkin.backend.Section;
 import game.funkin.objects.Note;
 

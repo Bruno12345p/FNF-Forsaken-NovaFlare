@@ -1,19 +1,22 @@
 ﻿package editors;
 
+import haxe.Json;
+
+import openfl.events.KeyboardEvent;
+import openfl.utils.Assets as OpenFlAssets;
+
+import flixel.util.FlxSort;
+import flixel.util.FlxStringUtil;
+import flixel.animation.FlxAnimationController;
+import flixel.input.keyboard.FlxKey;
+
+import game.funkin.objects.Character;
 import game.funkin.backend.Song;
 import game.funkin.backend.Section;
 import game.funkin.backend.Rating;
 import game.funkin.objects.Note;
 import game.funkin.objects.NoteSplash;
 import game.funkin.objects.StrumNote;
-import flixel.util.FlxSort;
-import flixel.util.FlxStringUtil;
-import flixel.animation.FlxAnimationController;
-import flixel.input.keyboard.FlxKey;
-import openfl.events.KeyboardEvent;
-import haxe.Json;
-import game.funkin.objects.Character;
-import openfl.utils.Assets as OpenFlAssets;
 import game.funkin.backend.TimingSystem;
 
 class EditorPlayState extends MusicBeatSubstate

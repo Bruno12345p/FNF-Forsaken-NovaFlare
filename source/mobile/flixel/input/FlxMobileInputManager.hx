@@ -1,9 +1,10 @@
 package mobile.flixel.input;
 
-import flixel.group.FlxSpriteGroup.FlxTypedSpriteGroup;
-import mobile.flixel.input.FlxMobileInputID;
-import mobile.flixel.FlxButton;
 import haxe.ds.Map;
+
+import flixel.group.FlxSpriteGroup.FlxTypedSpriteGroup;
+
+import mobile.flixel.FlxButton;
 
 /**
  * A FlxButton group with functions for input handling 

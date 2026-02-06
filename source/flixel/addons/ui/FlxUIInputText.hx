@@ -1,11 +1,12 @@
 package flixel.addons.ui;
 
+import lime.math.Rectangle;
+
+import openfl.Lib;
+
 import flixel.addons.ui.interfaces.IFlxUIWidget;
 import flixel.addons.ui.interfaces.IHasParams;
 import flixel.addons.ui.interfaces.IResizable;
-import flixel.util.FlxColor;
-import openfl.Lib;
-import lime.math.Rectangle;
 
 /**
  * @author Lars Doucet

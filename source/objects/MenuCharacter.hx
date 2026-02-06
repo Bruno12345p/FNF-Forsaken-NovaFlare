@@ -1,7 +1,8 @@
 package objects;
 
-import openfl.utils.Assets;
 import haxe.Json;
+
+import openfl.utils.Assets;
 
 typedef MenuCharacterFile =
 {

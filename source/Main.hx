@@ -1,14 +1,5 @@
 ﻿package;
 
-import developer.display.FPSViewer;
-import developer.display.Graphics;
-import developer.console.TraceInterceptor;
-
-import objects.screen.MouseEffect;
-
-import flixel.graphics.FlxGraphic;
-import flixel.FlxGame;
-
 import haxe.io.Path;
 import haxe.ui.Toolkit;
 
@@ -17,18 +8,26 @@ import openfl.display.Sprite;
 import openfl.events.Event;
 import openfl.display.StageScaleMode;
 import openfl.events.KeyboardEvent;
+
 import lime.system.System as LimeSystem;
 import lime.app.Application;
+
+import flixel.graphics.FlxGraphic;
+import flixel.FlxGame;
+
+import developer.display.FPSViewer;
+import developer.display.Graphics;
+import developer.console.TraceInterceptor;
+
+import objects.screen.MouseEffect;
+
 import states.TitleState;
 import states.backend.InitState;
 import states.backend.PassState;
-import mobile.backend.Data;
-import game.funkin.backend.ExtraKeysHandler;
 
 #if android
 import backend.device.AppData;
 import states.backend.PirateState;
-import sys.io.File;
 #end
 
 #if desktop

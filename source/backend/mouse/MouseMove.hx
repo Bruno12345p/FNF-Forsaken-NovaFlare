@@ -1,7 +1,6 @@
 package backend.mouse;
 
 import flixel.FlxBasic;
-import flixel.math.FlxMath;
 
 class MouseMove extends FlxBasic
 {

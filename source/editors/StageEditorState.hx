@@ -1,20 +1,24 @@
 ﻿package editors;
 
-import game.funkin.backend.StageData;
-import backend.PsychCamera;
-import game.funkin.objects.Character;
-import scripts.LuaUtils;
-import flixel.FlxObject;
-import flixel.addons.display.FlxBackdrop;
-import flixel.addons.display.FlxGridOverlay;
-import flixel.math.FlxRect;
-import flixel.util.FlxDestroyUtil;
+import flash.net.FileFilter;
+
 import openfl.display.Sprite;
 import openfl.net.FileReference;
 import openfl.events.Event;
 import openfl.events.IOErrorEvent;
+
+import flixel.FlxObject;
+import flixel.addons.display.FlxBackdrop;
+import flixel.addons.display.FlxGridOverlay;
+import flixel.math.FlxRect;
+
+import backend.PsychCamera;
+
+import scripts.LuaUtils;
 import scripts.ModchartSprite;
-import flash.net.FileFilter;
+
+import game.funkin.objects.Character;
+import game.funkin.backend.StageData;
 
 class StageEditorState extends MusicBeatState implements PsychUIEventHandler.PsychUIEvent
 {

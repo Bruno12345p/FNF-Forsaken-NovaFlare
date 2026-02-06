@@ -1,18 +1,23 @@
 ﻿package scripts.hscript;
 
 import flixel.FlxBasic;
-import game.funkin.objects.Character;
-import scripts.lua.LuaUtils;
-import scripts.lua.CustomSubstate;
+
 #if LUA_ALLOWED
 import scripts.lua.FunkinLua;
 #end
+
+import scripts.lua.LuaUtils;
+import scripts.lua.CustomSubstate;
+
+import game.funkin.objects.Character;
+
 #if HSCRIPT_ALLOWED
+import haxe.Exception;
+import haxe.ValueException;
+
 import crowplexus.hscript.Interp;
 import crowplexus.hscript.Expr;
 import crowplexus.hscript.Parser;
-import haxe.Exception;
-import haxe.ValueException;
 
 class HScriptBase
 {

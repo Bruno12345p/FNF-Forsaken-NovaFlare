@@ -1,6 +1,5 @@
 package flixel.tweens.misc;
 
-import flixel.tweens.FlxTween;
 #if HSCRIPT_ALLOWED
 import crowplexus.hscript.proxy.ProxyReflect as Reflect;
 #end

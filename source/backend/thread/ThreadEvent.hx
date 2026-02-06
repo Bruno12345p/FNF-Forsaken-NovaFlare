@@ -1,7 +1,8 @@
 package backend.thread;
 
-import sys.thread.Thread;
 import haxe.ds.IntMap;
+
+import sys.thread.Thread;
 
 /**
  * 在使用此类时，请确保你在以前已经研究过haxe线程的用法

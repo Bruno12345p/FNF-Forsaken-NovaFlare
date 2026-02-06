@@ -1,9 +1,9 @@
 package mobile.flixel;
 
 import flixel.graphics.frames.FlxTileFrames;
+
 import mobile.flixel.input.FlxMobileInputManager;
 import mobile.flixel.FlxButton;
-import flixel.math.FlxPoint;
 
 /**
  * A gamepad.

@@ -1,15 +1,11 @@
 ﻿package mobile.flixel;
 
-import mobile.flixel.input.FlxMobileInputManager;
-import openfl.display.BitmapData;
-import mobile.flixel.FlxButton;
-import openfl.display.Shape;
-import mobile.flixel.input.FlxMobileInputID;
-import game.funkin.PlayState;
-import game.funkin.backend.ExtraKeysHandler;
-import flixel.util.FlxColor;
-
 import openfl.Lib;
+import openfl.display.Shape;
+import openfl.display.BitmapData;
+
+import mobile.flixel.input.FlxMobileInputManager;
+import mobile.flixel.FlxButton;
 
 /**
  * A zone with dynamic hint's based on mania.
