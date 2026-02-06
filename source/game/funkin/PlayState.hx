@@ -2689,6 +2689,7 @@ function musicCheck(music:FlxSound, getTime:Float, deviation:Float):Bool
 	}
 
 	override function draw() {
+	    /*
 		if (camZooming)
 		{
 			if (FlxG.camera.zoom - defaultCamZoom > 5e-4)
@@ -2703,6 +2704,14 @@ function musicCheck(music:FlxSound, getTime:Float, deviation:Float):Bool
 				camHUD.zoom = 1;
 			}
 		}
+		*/
+		
+		if (camZooming)
+		{
+			FlxG.camera.zoom = FlxMath.lerp(defaultCamZoom, FlxG.camera.zoom, Math.exp(-elapsed * 3.125 * camZoomingDecay * playbackRate));
+			camHUD.zoom = FlxMath.lerp(1, camHUD.zoom, Math.exp(-elapsed * 3.125 * camZoomingDecay * playbackRate));
+		}
+
 		super.draw();
 	}
 
