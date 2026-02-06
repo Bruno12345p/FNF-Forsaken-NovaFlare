@@ -19,7 +19,7 @@ import openfl.display.BitmapData;
 import shaders.ColorSwap;
 
 import states.StoryMenuState;
-import states.OutdatedState;
+import states.backend.OutdatedState;
 import states.MainMenuState;
 import states.backend.FlashingState;
 

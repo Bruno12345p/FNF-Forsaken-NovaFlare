@@ -16,10 +16,18 @@ class PsychCamera extends FlxCamera
 		updateFlash(elapsed);
 		updateFade(elapsed);
 
-		flashSprite.filters = filtersEnabled ? filters : null;
+		if (flashSprite != null)
+		{
+			var targetFilters = filtersEnabled ? filters : null;
+			if (targetFilters != _lastFiltersApplied)
+			{
+				flashSprite.filters = targetFilters;
+				_lastFiltersApplied = targetFilters;
+			}
+		}
 
-		updateFlashSpritePosition();
 		updateShake(elapsed);
+		updateFlashSpritePosition();
 	}
 
 	public function updateFollowDelta(?elapsed:Float = 0):Void
