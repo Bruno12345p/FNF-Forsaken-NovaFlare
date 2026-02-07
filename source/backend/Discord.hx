@@ -143,7 +143,7 @@ class DiscordClient
 	#end
 
 	#if LUA_ALLOWED
-	public static function addLuaCallbacks(funk:scripts.FunkinLua)
+	public static function addLuaCallbacks(funk:scripts.lua.FunkinLua)
 	{
 		funk.set("changeDiscordPresence", function(details:String, state:Null<String>, ?smallImageKey:String, ?hasStartTimestamp:Bool, ?endTimestamp:Float)
 		{
