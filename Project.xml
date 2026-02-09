@@ -28,7 +28,7 @@
 	<define name="VIDEOS_ALLOWED" if="desktop || mobile" unless="32bits || hl || NOVIDEO || rpi"/> <!-- i'll keep this cuz it makes vscode think i don't use videos -->
     <define name="CUSTOM_SHADERS_ALLOWED" if="LUA_ALLOWED"/>
 
-	<define name="TRACY_ALLOWED" if="desktop"/>
+	<!--define name="TRACY_ALLOWED" if="desktop"/-->
 
 	<section if="officialBuild">
 		<!--define name="TITLE_SCREEN_EASTER_EGG"/-->
