@@ -23,6 +23,9 @@ import options.OptionsState;
 
 import game.funkin.backend.WeekData;
 
+
+import cpp.Lib;
+
 @:access(flixel.sound.FlxSound._sound)
 @:access(openfl.media.Sound.__buffer)
 class MainMenuState extends MusicBeatState
@@ -470,6 +473,15 @@ class MainMenuState extends MusicBeatState
 				endCheck = true;
 				MusicBeatState.switchState(new MasterEditorMenu());
 			}
+
+			if (FlxG.keys.justPressed.SHIFT)
+			{
+				native.NativeGLWindow.showRedCircleWindow();
+
+						//FlxTransWindow.getWindowsTransparent();
+
+			}
+
 		}
 
 		SoundTime = FlxG.sound.music.time / 1000;
@@ -658,4 +670,3 @@ class MainMenuState extends MusicBeatState
 		}
 	}
 }
-
