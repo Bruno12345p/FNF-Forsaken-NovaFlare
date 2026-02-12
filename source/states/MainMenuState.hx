@@ -22,6 +22,7 @@ import editors.MasterEditorMenu;
 import options.OptionsState;
 
 import game.funkin.backend.WeekData;
+import states.ServerConnectState;
 
 
 import cpp.Lib;
@@ -476,10 +477,7 @@ class MainMenuState extends MusicBeatState
 
 			if (FlxG.keys.justPressed.SHIFT)
 			{
-				native.NativeGLWindow.showRedCircleWindow();
-
-						//FlxTransWindow.getWindowsTransparent();
-
+				MusicBeatState.switchState(new ServerConnectState());
 			}
 
 		}

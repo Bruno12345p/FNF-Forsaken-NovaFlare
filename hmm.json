@@ -59,6 +59,13 @@
       "version": "1.0.0"
     },
     {
+      "name": "hxWebSockets",
+      "type": "git",
+      "dir": null,
+      "ref": "master",
+      "url": "https://github.com/ianharrigan/hxWebSockets.git"
+    },
+    {
       "name": "modcharts",
       "type": "git",
       "dir": null,
